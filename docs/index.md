@@ -25,7 +25,7 @@ Use Cases | 6 | |
 Service Metadata Publishing (SMP) Version 1.0 Profile (Normative) | 7 | | 
 Identifiers | 8 | | 
 Services provided by the Capability Publisher | 9 | | 
-Appendix: Use Cases |  | | 
+AppendixA: Use Cases |  | | 
  	 
 Primary Audience | img 
 ---|---
