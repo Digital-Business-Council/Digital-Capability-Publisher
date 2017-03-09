@@ -91,3 +91,8 @@ There are a number of scenarios covered by this use case:
  d. The business has Access Point and Digital Capability Publisher services with separate providers and consolidates the services in one     provider.
  
  e. The business has different Service Providers for Digital Capability Publisher and Access Point services, and moves each service to       two new Service Providers. 
+ 
+ **Assumptions**
+ 
+  1. A Service Provider can operate an Access Point and/or a Digital Capability Register but it is not mandatory to provide both. 
+  2. Where a Service Provider can provide both services, whether a business chooses to use both services of that one service provider is completely at their discretion. 
