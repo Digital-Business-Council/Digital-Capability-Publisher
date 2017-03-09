@@ -105,3 +105,9 @@ There are a number of scenarios covered by this use case:
  4. In Access Point service provider change events, The Service Provider holding the business’ capability record must comply with Access Point Service Provider request to update the capability record with the new Access Point details. 
  5. As defined in the Council provider agreements, the losing Service Provider must cooperate with the gaining (New) Service Provider during portability/change of service events.
  6. Only one capability record can exist in the eDelivery framework for a participant; this record contains all the capabilities of the business. 
+ 
+ **Pre-conditions**
+ 
+ 1. The business has agreements with one or more Service Providers for receiving Council supported business processes and documents through one or more Access Point providers and only one Digital Capability Publisher provider, having either become a new participant or changed service providers.
+ 2. The business has only one capability record in any accredited Digital Capability Publisher.
+ 3. The business is discoverable in the Digital Capability Locator and, if the new Digital Capability Publisher is listed in the Digital Capability Locator entry. 
