@@ -111,3 +111,27 @@ There are a number of scenarios covered by this use case:
  1. The business has agreements with one or more Service Providers for receiving Council supported business processes and documents through one or more Access Point providers and only one Digital Capability Publisher provider, having either become a new participant or changed service providers.
  2. The business has only one capability record in any accredited Digital Capability Publisher.
  3. The business is discoverable in the Digital Capability Locator and, if the new Digital Capability Publisher is listed in the Digital Capability Locator entry. 
+
+**Post-conditions**
+
+ 1. The business has agreements with one or more Service Providers for receiving Council supported business processes and documents through one or more Access Point providers and only one Digital Capability Publisher provider, having either become a new participant or changed service providers.
+ 2. The business has only one capability record in any accredited Digital Capability Publisher.
+ 3. The business is discoverable in the Digital Capability Locator and, if the new Digital Capability Publisher is listed in the Digital Capability Locator entry. 
+ 
+ **Basic FLow- New Participant in eInvoicing; Business chooses to use a single Service Provider for both Access Point and Digital Capability Publisher services
+ 
+ 1. The business determines their requirements; 
+ 2. The business investigates the services offered and pricing of various service providers;
+ 3. The business determines the Service Provider(s) that meets their requirements;
+ 4. The business enters an agreement with the New Service Provider;
+ 5. The New Service Provider determines if the business’ capability is already registered in a capability register (this also determines if the client has an Access Point service in the framework also); 
+ 6. The business does not have an existing capability record registered and requires it to be created in the New Service Provider’s Digital Capability Publisher; 
+ 7. The New Service Provider determines the client does not have an Access Point service and will use the New Service Provider’s AP; 
+ 8. The New Service Provider adds its own supported Access Point address, transport profiles, document types and processes to the business’ capability record in its own Digital Capability Publisher;
+ 
+  a. <<include>> SUC003 – Register Capability. 
+ 9. The New Service Provider requests the capability address (Digital Capability Locator entry) be added to the Digital Capability Locator;
+ 
+  a. <<include>> SUC002 – Register Capability Address. 
+ 10. The New Service Provider informs the business the on-boarding activities have been completed;
+ 11. End flow. 
