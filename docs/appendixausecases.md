@@ -71,3 +71,8 @@ This use case is optional as it would only be useful if there were more than one
 5. The requester receives the response;
 
 6. End flow. 
+
+## BUC036 Business On-boarding
+**Purpose**
+
+This use case describes the process to on-board a business to a single Digital Capability Publisher and/or one or more Access Point services for eDelivery. This does not include Access Point and Digital Capability Publisher service providers themselves, who are covered by the process described in BUC010 – Service Provider On-Boarding. 
