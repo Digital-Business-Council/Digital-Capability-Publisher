@@ -181,3 +181,24 @@ At step 6, the New Service Provider discovers the business has an existing Digit
   i. <<include>> SUC003 – Register Capability 
   
  e. Resume at step 9. 
+
+**Exception flows**
+
+1. New Participant; Business is signing up to Access Point service with the New Service Provider, it will use another Service Provider for Digital Capability Publisher services.
+
+At step 6, the New Service Provider determines the business will use a different service provider for a Digital Capability Publisher service.
+
+ a. The Digital Capability Publisher service provide requests the New Service Provider’s Access Point details; 
+ 
+ b. The New Service Provider provides their Access Point endpoint address and transport profile, to enable the Digital Capability Publisher Service Provider to successfully create the business’ capability record;
+ 
+ c. The Digital Capability Publisher Service Provider creates the capability record;
+  
+  i. <<include>> SUC003 – Register Capability. 
+  
+ d. The Digital Capability Publisher Provider requests addition of the business’ Digital Capability Locator entry in the Digital Capability Locator; 
+  i. <<include>> SUC002 – Register Capability Address. 
+  
+  e. The Digital Capability Publisher Provider informs the business that all access points have been added to the capability record for each document/process and the Digital Capability Locator entry has been created; 
+  
+  f. End flow. 
