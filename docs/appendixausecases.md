@@ -286,3 +286,4 @@ N/A
   ##SUC006 Lookup Digital Capability Publisher Alias Address
   
   **Purpose**
+This use case describes the steps required for a party to discover the Digital Capability Publisher Alias Address of a participant. 
