@@ -88,7 +88,7 @@ There are a number of scenarios covered by this use case:
  
  c. The business moves only the Digital Capability Publisher service to a new service provider.
  
- d. The business has Access Point and Digital Capability Publisher services with separate providers and consolidates the services in one     provider.
+ d. The business has Access Point and Digital Capability Publisher services with separate providers and consolidates the services in one     provider. 
  
  e. The business has different Service Providers for Digital Capability Publisher and Access Point services, and moves each service to       two new Service Providers. 
  
@@ -96,3 +96,12 @@ There are a number of scenarios covered by this use case:
  
   1. A Service Provider can operate an Access Point and/or a Digital Capability Register but it is not mandatory to provide both. 
   2. Where a Service Provider can provide both services, whether a business chooses to use both services of that one service provider is completely at their discretion. 
+
+**Constraints**
+
+ 1. The Service Provider, when providing both services, must create and maintain the business’ Digital Capability Locator entry and Digital Capability Publisher capability record. 
+ 2. When the business enters into agreements with a Digital Capability Publisher service provider and one or more Access Point service providers, the Digital Capability Publisher Service provider is responsible for coordinating, creating and maintaining the Digital Capability Locator entry and Digital Capability Publisher record on behalf of the business for the duration of this arrangement as it will need all Access Point details to create the business’ Capability record in their nominated Digital Capability Publisher. 
+ 3. When the business has its own Access Point, the Service Provider for Digital Capability Publisher services is responsible for creating and maintaining the Digital Capability Locator entry, creating the capability record and responding to requests by the business to update the Access Point details the business uses as required. 
+ 4. In Access Point service provider change events, The Service Provider holding the business’ capability record must comply with Access Point Service Provider request to update the capability record with the new Access Point details. 
+ 5. As defined in the Council provider agreements, the losing Service Provider must cooperate with the gaining (New) Service Provider during portability/change of service events.
+ 6. Only one capability record can exist in the eDelivery framework for a participant; this record contains all the capabilities of the business. 
