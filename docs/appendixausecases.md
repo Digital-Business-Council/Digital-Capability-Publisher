@@ -135,3 +135,17 @@ There are a number of scenarios covered by this use case:
   a. <<include>> SUC002 – Register Capability Address. 
  10. The New Service Provider informs the business the on-boarding activities have been completed;
  11. End flow. 
+
+**Alternate Flows**
+
+ **1. New Participant; Business is signing up to Digital Capability Publisher service only (participant may have an Access Point of its own or is signing a separate agreement with a different Access Point Service Provider).**
+ 
+  a. At step 6, the New Service Provider determines the Business is entering into an agreement with a different Access Point service provider or is using its own Access Point;
+  
+  b. The New Service Provider obtains the Access Point endpoint address and transport profile it supports for each document and process, from either the Business (if using its own AP) or the Business’ Access Point Service Provider(s);
+  
+  c. The New Service Provider creates a capability record including Access Point endpoint address, transport profile, document and process types;
+  
+   i. <<include>> SUC003 – Register Capability. 
+   
+  d. Resume at step 9. 
