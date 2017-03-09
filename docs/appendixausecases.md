@@ -224,3 +224,65 @@ At step 9, the service provider discovers the participant has an existing Access
  ## SUC002 Register Digital Capability Publisher Alias Address
  
  **Purpose**
+ 
+This use case describes the interaction required for the Identifier to be mapped to the Digital Capability Publisher Alias Address of a participant’s Digital Capability Publisher and this mapping added to the Digital Capability Locator, enabling the Participant to be discovered. 
+
+**Assumptions**
+
+N/A
+
+**Pre-conditions**
+
+ 1. The participant’s capability record has been added to an accredited Digital Capability Publisher. 
+ 2. The participant does not have a Digital Capability Publisher Alias Address already registered. 
+ 3. The Digital Capability Publisher has been accredited by the council and added to the Digital Capability Locator. 
+ 4. The Digital Capability Publisher has obtained the identifier and the identifier scheme of the participant. 
+ 
+**Post-conditions**
+
+ 1. The Digital Capability Publisher Alias Address of the participant’s Digital Capability Publisher has been added to the Digital Capability Locator, with the Participant’s identifier mapped to the Digital Capability Publisher endpoint address. 
+ 2. The participant’s Digital Capability Publisher address is discoverable on the Digital Capability Locator. 
+ 
+**Basic Flow**
+
+ 1. The requester constructs the Digital Capability Publisher Alias Address record addition request;
+ 2. The requester sends the Digital Capability Publisher Alias Address record addition request to the Digital Capability Locator;
+ 3. The Digital Capability Locator receives the Digital Capability Publisher Alias Address record addition request;
+ 4. The Digital Capability Locator checks the requester is authorised to request a record addition; 
+ 5. The Digital Capability Locator verifies the Digital Capability Publisher Alias Address record addition request is in the correct format; 
+ 6. The Digital Capability Locator determines no record exists for this participant;
+ 7. The Digital Capability Locator locates the accredited Digital Capability Publisher specified in the request for inclusion in the participant’s record;
+ 8. The Digital Capability Locator checks the Digital Capability Publisher in the request is accredited;
+ 9. The Digital Capability Locator publishes the participant’s Digital Capability Publisher Alias Address record;
+ 10. The Digital Capability Locator responds, informing the requester that the Digital Capability Publisher Alias Address has been published successfully; 
+ 11. End flow.
+ 
+ **Exception Flows**
+ 1. At step 4, the Digital Capability Locator determines the requester is not authorised and sends an error response indicating this; 
+ 2. At step 5, the Digital Capability Locator is unable to add the Digital Capability Publisher Alias Address record successfully because the request format is invalid;
+ 
+  a. The Digital Capability Locator sends an error message response to the requester;
+  
+  b. End flow.
+  
+ 3. At step 6, the Digital Capability Locator is unable to add the Digital Capability Publisher Alias Address record successfully to the Digital Capability Locator because the participant already has a record;
+ 
+  a. The Digital Capability Locator sends an error message response to the requester;
+  
+  b. End flow.
+  
+ 4. At step 7, the Digital Capability Locator is unable to add the Digital Capability Publisher Alias Address record successfully because the Digital Capability Publisher identifier provided cannot be found;
+ 
+  a. The Digital Capability Locator sends an error message response to the requester;
+  
+  b. End flow.
+  
+ 5. At step 8, the Digital Capability Locator is unable to add the Digital Capability Publisher Alias Address record successfully because the Digital Capability Publisher is not accredited;
+ 
+  a. The Digital Capability Locator sends an error message response to the requester;
+  
+  b. End flow.
+  
+  ##SUC006 Lookup Digital Capability Publisher Alias Address
+  
+  **Purpose**
