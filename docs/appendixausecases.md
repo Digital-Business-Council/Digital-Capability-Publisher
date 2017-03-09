@@ -75,4 +75,19 @@ This use case is optional as it would only be useful if there were more than one
 ## BUC036 Business On-boarding
 **Purpose**
 
-This use case describes the process to on-board a business to a single Digital Capability Publisher and/or one or more Access Point services for eDelivery. This does not include Access Point and Digital Capability Publisher service providers themselves, who are covered by the process described in BUC010 – Service Provider On-Boarding. 
+This use case describes the process to on-board a business to a single Digital Capability Publisher and/or one or more Access Point services for eDelivery. This does not include Access Point and Digital Capability Publisher service providers themselves, who are covered by the process described in BUC010 – Service Provider On-Boarding.
+
+There are a number of scenarios covered by this use case:
+
+1. A business is entering the eDelivery framework for the first time (new participant).
+2. A business changes their service provider(s) to a single or multiple service provider (noting a business can only have one and only one Digital Capability Publisher service provider): 
+
+ a. The business moves both services from one service provider to one or more service providers.
+ 
+ b. The business moves only their Access Point service for a particular process to a new service provider.
+ 
+ c. The business moves only the Digital Capability Publisher service to a new service provider.
+ 
+ d. The business has Access Point and Digital Capability Publisher services with separate providers and consolidates the services in one     provider.
+ 
+ e. The business has different Service Providers for Digital Capability Publisher and Access Point services, and moves each service to       two new Service Providers. 
