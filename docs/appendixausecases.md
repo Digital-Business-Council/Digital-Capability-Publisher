@@ -321,3 +321,9 @@ This use case describes the steps required for a party to discover the Digital C
 
  2. At step 2, the Digital Capability Publisher Alias Address of a recipient’s capability has been previously looked up by the requester, stored locally and is still valid (the Time-To-Life has not expired). The capability location is then determined by the requester based on this cached record and the Digital Capability Locator does not need to be queried. 
  
+**Exception Flows**
+
+ 1. At step 4 the Digital Capability Locator cannot locate the recipient’s Digital Capability Publisher Alias Address record and responds with an error message indicating this outcome;
+ 2. At step 2 the Digital Capability Locator domain is incorrect;
+  a. The DNS server responds with an error;
+  b. End flow.
