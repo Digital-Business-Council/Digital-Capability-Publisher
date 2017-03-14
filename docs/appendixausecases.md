@@ -329,3 +329,11 @@ This use case describes the steps required for a party to discover the Digital C
   a. The DNS server responds with an error;
   
   b. End flow.
+
+ 3. At step 6 the Digital Capability Publisher Alias Address is not present in the Digital Capability Publisher Alias Address record;
+ 
+  a. The Digital Capability Locator responds to the query; 
+
+  b. The requester receives the response but cannot discover the location of the Participant’s Digital Capability Publisher;
+  
+  c. End flow.
