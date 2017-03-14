@@ -325,5 +325,7 @@ This use case describes the steps required for a party to discover the Digital C
 
  1. At step 4 the Digital Capability Locator cannot locate the recipient’s Digital Capability Publisher Alias Address record and responds with an error message indicating this outcome;
  2. At step 2 the Digital Capability Locator domain is incorrect;
+  
   a. The DNS server responds with an error;
+  
   b. End flow.
