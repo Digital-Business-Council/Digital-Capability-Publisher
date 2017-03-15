@@ -383,3 +383,33 @@ This use case describes the steps to remove a Digital Capability Publisher Alias
   a. The Digital Capability Locator sends an error message response to the requester;
   
   b. End flow.
+
+## SUC018 List of Accredited Access Points
+
+**Purpose**
+
+This may be performed when a requester wants to discover all accredited Access Points accredited or determine the accreditation status of a particular Access Point.
+
+**Assumptions**
+
+ 1. This list will be readily available and not require authentication and authorisation checks for requesters.
+
+**Pre-conditions**
+
+ 1. The Access Points on the list have been accredited by the accreditation body.
+ 
+**Post-conditions**
+
+ 1. The requester has obtained the list of accredited access points.
+ 
+ **Basic Flow**
+ 
+  1. The requester sends a request to the Digital Capability Locator for a list of accredited access points;
+  2. The Digital Capability Locator receives the request;
+  3. The Digital Capability Locator compiles the list of accredited Access Points;
+  4. The Digital Capability Locator sends the response with the list to the requester;
+  5. End flow.
+  
+## SUC005 Lookup Participant's Digital Capability
+
+**Purpose**
