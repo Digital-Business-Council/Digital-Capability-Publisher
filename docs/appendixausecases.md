@@ -608,4 +608,47 @@ b. End flow.
 
 **Purpose**
 
-This use case describes the steps to remove a participant’s capability. This could be to either remove a single business process from the participant’s record or to remove the entire capability for all business processes for a participant. 
+This use case describes the steps to remove a participant’s capability. This could be to either remove a single business process from the participant’s record or to remove the entire capability for all business processes for a participant.
+
+**Assumptions**
+
+ 1. A requester could be the Access Point or the Participant themselves.
+ 2. The requester needs to be authenticated and only authorised parties can remove capability.
+ 
+**Pre-conditions**
+
+ 1. The participant has an existing capability record in the Digital Capability Publisher.
+ 
+**Post-conditions**
+
+ 1. The participant’s capability record has had the appropriate detail(s) removed.
+ 
+**Basic Flow**
+
+ 1. The requester sends a request to the Digital Capability Publisher to remove the required capability;
+ 2. The Digital Capability Publisher checks that the requester is authorised to remove the capability;
+ 3. The Digital Capability Publisher determines the remove request format to be correct;
+ 4. The Digital Capability Publisher locates the capability needing to be removed;
+ 5. The Capability requested by the requester is removed by the Digital Capability Publisher;
+ 6. The Digital Capability Publisher responds to the requester with confirmation the capability has been removed;
+ 7. End flow.
+ 
+**Exception Flows**
+
+ 1. At step 2, the Digital Capability Publisher is unable to remove the capability because the requester is not authorised to add a record; 
+
+a. The Digital Capability Publisher sends an error message response to the requester; 
+
+b. End flow.
+
+ 2. At step 4 the Digital Capability Publisher cannot find a record belong to the participant; 
+
+a. The Digital Capability Publisher responds with an error message; 
+
+b. End flow.
+
+ 3. At step 3 the Digital Capability Publisher finds the request format to be invalid; 
+
+a. The Digital Capability Publisher responds with an error message; 
+
+b. End flow. 
