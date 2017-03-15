@@ -337,3 +337,5 @@ This use case describes the steps required for a party to discover the Digital C
   b. The requester receives the response but cannot discover the location of the Participant’s Digital Capability Publisher;
   
   c. End flow.
+  
+ ## SUC013 Remove Digital Capability Publisher Alias Address
