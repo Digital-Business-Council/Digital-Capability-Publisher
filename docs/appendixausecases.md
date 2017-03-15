@@ -473,8 +473,56 @@ a. <<include>> SUC006 - Lookup Participant’s DCP Alias Address.
   
   b. End flow.
   
-## SIC003 Register Capability
+## SUC003 Register Capability
  
 **Purpose**
 
 This use case describes the steps required for an Access Point provider or a participant to add the digital capability record for the participant on a Digital Capability Publisher. 
+
+**Assumptions**
+
+ 1. The party adding the capability record is authenticated and authorised to perform the addition of a capability record on behalf of the Participant.
+ 
+**Pre-conditions**
+
+ 1.The Access Point endpoint address and transport Profile for each of the Participant’s supported business processes is known to the party adding the capability record. 
+ 2. A participant cannot have an existing capability in any Digital Capability Publisher.
+ 
+**Post-conditions**
+
+ 1. The participant’s capability record has been added to a Digital Capability Publisher, including the Access Point endpoint address for each business process and the transport Profile used for each process.
+ 2. There is only one Digital Capability Publisher record for a participant in any Digital Capability Publisher.
+ 
+**Basic Flow**
+
+ 1. The Access Point provider or Participant sends the capability record addition request to the Digital Capability Publisher;
+ 2. The Digital Capability Publisher checks the requester is authorised to perform the addition of a capability record;
+ 3. The Digital Capability Publisher checks the request format is correct;
+ 4. The Digital Capability Publisher checks the participant does not have an existing record in this Digital Capability Publisher;
+ 5. The Digital Capability Publisher creates the capability record;
+ 6. The Digital Capability Publisher adds the capability record successfully;
+ 7. The Digital Capability Publisher informs the requester of the successful addition of the record;
+ 8. The Digital Capability Publisher adds the DCP Alias Address of the participant to the Digital Capability Locator; 
+
+a. <<include>> SUC002 - Register DCP Alias Address. 
+
+ 9. End flow.
+ 
+**Exception Flows**
+
+ 1. At step 2, the Digital Capability Publisher is unable to add the Capability Record because the requester is not authorised to add a record; 
+ 
+  a. The Digital Capability Publisher sends an error message response to the requester;
+  b. End flow.
+  
+ 4. At step 5, the Digital Capability Publisher is unable to add the Capability record successfully because the identifier provided does not conform to an Identifier scheme supported by the Council;
+ 
+  a. The Digital Capability Publisher sends an error message response to the requester;
+  b. End flow.
+ 
+ 5. At step 5, the Digital Capability Publisher is unable to add the Capability Record successfully because the document identifier in the request does not conform to a supported document identifier scheme;
+ 
+  a. The Digital Capability Publisher sends an error message response to the requester;
+  b. End flow.
+  
+## SUC014 Update Capability
