@@ -526,3 +526,12 @@ a. <<include>> SUC002 - Register DCP Alias Address.
   b. End flow.
   
 ## SUC014 Update Capability
+
+**PUrpose**
+
+This use case describes the steps to update a participant’s capability. This could be, for example, to change Access Point endpoint locations for a business process in the capability record, update a transport Profile for a process, or add a capability for a new business process.
+
+**Assumptions**
+
+ 1. The Access Point or Participant can update the Digital Capability Publisher.
+ 2. The requester needs to be authenticated and only authorised parties can update capability records. 
