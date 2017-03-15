@@ -448,3 +448,9 @@ a. <<include>> SUC006 - Lookup Participant’s DCP Alias Address.
  9 . End flow.
  
 **Exception Flows**
+
+ 1. At step 5, the Digital Capability Publisher cannot find a Capability Record for the participant;
+ 
+ a. The Capability Record sends an error message response to the requester;
+ 
+ b. End flow. 
