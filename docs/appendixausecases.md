@@ -527,7 +527,7 @@ a. <<include>> SUC002 - Register DCP Alias Address.
   
 ## SUC014 Update Capability
 
-**PUrpose**
+**Purpose**
 
 This use case describes the steps to update a participant’s capability. This could be, for example, to change Access Point endpoint locations for a business process in the capability record, update a transport Profile for a process, or add a capability for a new business process.
 
@@ -535,3 +535,77 @@ This use case describes the steps to update a participant’s capability. This c
 
  1. The Access Point or Participant can update the Digital Capability Publisher.
  2. The requester needs to be authenticated and only authorised parties can update capability records. 
+
+**Pre-conditions**
+
+ 1. The participant has an existing capability record in the Digital Capability Publisher.
+ 
+**Post-conditions**
+
+ 1. The participant’s capability record has had the appropriate detail updated.
+ 
+**Basic Flow**
+
+ 1. The requester sends a request to the Digital Capability Publisher to update the capability record with the appropriate detail;
+ 2. The Digital Capability Publisher checks if the requester is authorised to an update to the participant’s record;
+ 3. The Digital Capability Publisher determines the request format to be valid;
+ 4. The Digital Capability Publisher locates the record to be updated;
+ 5. The capability record is updated by the Digital Capability Publisher with the requested detail;
+ 6. The Digital Capability Publisher responds with confirmation the capability record has been updated;
+ 7. End basic flow.
+ 
+**Exception Flows**
+
+ 1. At step 2, the Digital Capability Publisher is unable to add the Capability Record because the requester is not authorised to add a record; 
+
+a. The Digital Capability Publisher sends an error message response to the requester; 
+
+b. End flow. 
+
+ 2. At step 4, the Digital Capability Publisher cannot find a record belonging to the participant; 
+
+a. The Digital Capability Publisher responds with an error message; 
+
+b. End flow.
+
+ 3. At step 3, the Digital Capability Publisher is unable to update the Capability Record successfully because the transport Profile in the request does not conform to the supported Council transport Profiles; 
+
+a. The Digital Capability Publisher sends an error message response to the requester; 
+
+b. End flow.
+
+ 4. At step 3, the Digital Capability Publisher is unable to update the Capability record successfully because the request format is not valid; 
+
+a. The Digital Capability Publisher sends an error message response to the requester; 
+
+b. End flow.
+
+ 5. At step 3, the Digital Capability Publisher is unable to update the Capability record successfully because the participant identifier provided does not conform to an Identifier scheme supported by the Council; 
+
+a. The Digital Capability Publisher sends an error message response to the requester; 
+
+b. End flow.
+
+ 6. At step 3, the Digital Capability Publisher is unable to update the Capability record successfully because the Access Point endpoint address provided does not conform to the correct format; 
+
+a. The Digital Capability Publisher sends an error message response to the requester; 
+
+b. End flow.
+
+ 7. At step 3, the Digital Capability Publisher is unable to update the Capability Record successfully because the document identifier in the request does not conform to a supported document identifier scheme; 
+
+a. The Digital Capability Publisher sends an error message response to the requester; 
+
+b. End flow.
+
+ 8. At step 3, the Digital Capability Publisher is unable to update the Capability Record successfully because the process identifier in the request does not conform to a supported process identifier scheme; 
+
+a. The Digital Capability Publisher sends an error message response to the requester; 
+
+b. End flow.
+
+## SUC015 Remove Capability
+
+**Purpose**
+
+This use case describes the steps to remove a participant’s capability. This could be to either remove a single business process from the participant’s record or to remove the entire capability for all business processes for a participant. 
