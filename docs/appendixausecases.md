@@ -413,3 +413,12 @@ This may be performed when a requester wants to discover all accredited Access P
 ## SUC005 Lookup Participant's Digital Capability
 
 **Purpose**
+
+This use case describes the steps required for a party to discover a specific capability for a particular document and process. The party would discover in the capability the service endpoint and transport Profile for a recipient’s Access Point for the specified document and process. 
+For example, an Access Point could be trying to determine if the Recipient actually accepts eInvoicing process documents such as Tax Invoices, where to send them and in what format.
+
+**Assumptions**
+
+ 1. Capability records should not be cached or stored outside of a Digital Capability Publisher, but the capability looked up in the Digital Capability Publisher each time needs to be discovered.
+ 
+ 2. Any party can determined the business processes and capability of a participant in eDelivery without being authenticated or authorised. 
