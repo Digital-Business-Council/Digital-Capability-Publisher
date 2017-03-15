@@ -369,4 +369,17 @@ This use case describes the steps to remove a Digital Capability Publisher Alias
  7. The Digital Capability Locator sends a response to the requester confirming the location has been removed;
  8. End flow.
  
+**Exception Flows**
+
+ 1. At step 3, the Digital Capability Locator determines the requester is not authorised to perform a removal of the Digital Address;
+ 2. At step 4, the Digital Capability Locator is unable to remove the Digital Capability Publisher Alias Address record successfully because the request format is not valid;
  
+  a. The Digital Capability Locator sends an error message response to the requester;
+  
+  b. End flow.
+  
+ 3. At step 5, the Digital Capability Locator cannot find a Digital Capability Publisher Alias Address Record for the participant;
+ 
+  a. The Digital Capability Locator sends an error message response to the requester;
+  
+  b. End flow.
