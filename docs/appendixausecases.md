@@ -422,3 +422,29 @@ For example, an Access Point could be trying to determine if the Recipient actua
  1. Capability records should not be cached or stored outside of a Digital Capability Publisher, but the capability looked up in the Digital Capability Publisher each time needs to be discovered.
  
  2. Any party can determined the business processes and capability of a participant in eDelivery without being authenticated or authorised. 
+
+**Pre-conditions**
+
+ 1. The requester has obtained the Participant’s identifier and its scheme, the document type, and the business process.
+ 
+**Post-conditions**
+
+ 1. The recipient’s digital capability for the document type and business process has been confirmed by a requester.
+ 2. The requester has determined the recipient’s Access Point endpoint address and transport Profile needed to send the business document.
+ 
+**Basic Flow**
+
+ 1. The requester establishes the location of the recipient’s Digital Capability Publisher; 
+
+a. <<include>> SUC006 - Lookup Participant’s DCP Alias Address. 
+
+ 2. The requester constructs the request to retrieve recipient’s capability record including participant identifier, document type and process type;
+ 3. The requester sends the request to the Digital Capability Publisher endpoint;
+ 4. The Digital Capability Publisher receives the request and verifies the format is correct;
+ 5. The Digital Capability Publisher finds the appropriate capability record;
+ 6. The Digital Capability Publisher creates the response including the capability record of the Participant, containing the Access Point service endpoint and transport Profile for the specified process;
+ 7. The Digital Capability Publisher sends the response to the requester;
+ 8. The requester receives the response successfully; 
+ 9 . End flow.
+ 
+**Exception Flows**
