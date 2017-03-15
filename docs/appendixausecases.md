@@ -339,3 +339,34 @@ This use case describes the steps required for a party to discover the Digital C
   c. End flow.
   
  ## SUC013 Remove Digital Capability Publisher Alias Address
+
+**Purpose**
+
+This use case describes the steps to remove a Digital Capability Publisher Alias Address record from the Digital Capability Locator.
+
+**Assumptions**
+
+ 1. The participant no longer trades or decides not to participate in eDelivery.
+ 2. The Digital Capability Publisher or the participant can request removal the participant’s Digital Capability Publisher Alias Address, so long as they can be authenticated and their permissions allow this.
+ 3. The requester could be removing the record before adding a new one.
+ 
+**Pre-conditions**
+
+ 1. The participant has an existing Digital Capability Publisher Alias Address record.
+ 
+**Post-conditions**
+
+ 1. The participant’s Digital Capability Publisher Alias Address record is no longer discoverable on the Digital Capability Locator.
+ 
+**Basic Flow**
+
+ 1. The Digital Capability Publisher or participant itself sends a request to the Digital Capability Locator to remove the participant’s Digital Capability Publisher Alias Address record;
+ 2. The Digital Capability Locator receives the request;
+ 3. The Digital Capability Locator checks the requester is authorised to request the record to be removed;
+ 4. The Digital Capability Locator checks the request format is correct;
+ 5. The Digital Capability Locator locates the participant’s record;
+ 6. The Digital Capability Locator removes the participant’s Digital Capability Publisher Alias Address record;
+ 7. The Digital Capability Locator sends a response to the requester confirming the location has been removed;
+ 8. End flow.
+ 
+ 
