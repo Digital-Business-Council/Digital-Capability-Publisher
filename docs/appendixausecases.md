@@ -454,3 +454,27 @@ a. <<include>> SUC006 - Lookup Participant’s DCP Alias Address.
  a. The Capability Record sends an error message response to the requester;
  
  b. End flow. 
+
+ 2. At step 2, the Digital Capability Publisher is unable to find the Capability record successfully because the request format is not valid;
+ 
+  a. The Digital Capability Publisher sends an error message response to the requester;
+  
+  b. End flow.
+  
+ 3. At step 2, the Digital Capability Publisher is unable to find the Capability record successfully because the identifier provided does not conform to an Identifier scheme supported by the Council;
+ 
+  a. The Digital Capability Publisher sends an error message response to the requester;
+  
+  b. End flow.
+  
+ 4. At step 2, the Digital Capability Publisher is unable to find the Capability successfully because the document type or process provided in the request does not conform to any in the capability record for that participant; 
+ 
+  a. The Digital Capability Publisher sends an error message response to the requester;
+  
+  b. End flow.
+  
+## SIC003 Register Capability
+ 
+**Purpose**
+
+This use case describes the steps required for an Access Point provider or a participant to add the digital capability record for the participant on a Digital Capability Publisher. 
