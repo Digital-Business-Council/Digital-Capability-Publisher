@@ -21,5 +21,9 @@ The use cases listed in this section are separated in two categories:
 | | | | | |
 | ---| ---| ---| -----| -----|
 **Use Case ID**| **Actors**| **Description**| **High Level Process**| **Present In**|
+SUC002 | Digital Capability Publisher, Access Point, Digital Capability Locator | Register Digital Capability Publisher Alias Address | Maintenance | Implementation guides for: Access Point, Digital Capability Publisher and Digital Capability Locator |
+SUC003 | Access Point, Digital Capability Publisher | Register Capability | Maintenance | Implementation guides for: Digital Capability Publisher and Access Point |
+
+
 
 
