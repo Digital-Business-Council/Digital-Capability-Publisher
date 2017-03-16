@@ -50,11 +50,11 @@ The format as specified in the standard is:
 
 {identifier scheme}::{rootNamespace}::{documentElementLocalName}[##{Subtype identifier}] 
 
-URL Example:
+*URL Example:*
 
 dbc-docid::urn:www.digitalbusinesscouncil.com.au:dbc:einvoicing:doctype:core-invoice:xsd::core-invoice-1##urn:www.digitalbusinesscouncil.com.au:dbc:einvoicing:process:einvoicing02:ver1.0 
 
-XML Example: 
+*XML Example:* 
 
 ![documentidentifier_Logo](/images/document-identifier.PNG) 
 
@@ -65,9 +65,14 @@ A process identifier has two componenets:
  - The scheme of the identifier; and
  - The unique ID within the scheme.
  
+ | | |
+ | --| ---|
+ scheme | dbc-procid |
+scheme-specific identifier | <unique process identifier> |
+
 *XML Example:*
 
-
+!(/images/Process-identifier_Logo](/images/Process-identifier.PNG)
 
 ## 8.4 Transport Profile
 
