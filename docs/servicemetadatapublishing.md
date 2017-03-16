@@ -1,4 +1,4 @@
-# 7 Service Metadata Publishing (SMP) Version 1.0 Profile (Normative)\
+# 7 Service Metadata Publishing (SMP) Version 1.0 Profile (Normative)
 
 This section explains how the OASIS BDX-smp specification (OASIS, 2014) is profiled for use within the Interoperability Framework.
 
