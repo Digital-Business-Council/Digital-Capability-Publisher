@@ -199,11 +199,29 @@ If the resource does not exist, a resource is created for the provided location.
 
 #### 9.2.2.4 Resource Location
 
+| | | |
+| ---| ----| ---|
+Request URL | http://<dcp domain>/{scheme identifier}::{id} | |
+HTTP Method | SSL/TLS | Authentication Mechanism |
+PUT | Yes | Client Certificate |
+
 The Service Group resource has the following location:
+
+![servicegroup-resource_Logo](/images/servicegroup-resource.PNG)
 
 Colons in the URL need to be encoded as per (Berners-Lee, Fielding, & Masinter, 2005).
 
+| | |
+| ---| ---|
+scheme identifier | urn:oasis:tc:ebcore:partyid-type:catalog-identifier:scheme-in-catalog |
+id | <identifier>  E.g. <ABN Number> |
+
+
+
+
+
 Example URL
+![servicegroup-resourceURL_Logo](/images/servicegroup-resourceURL.PNG)
 
 #### 9.2.2.5 Request Headers
 
