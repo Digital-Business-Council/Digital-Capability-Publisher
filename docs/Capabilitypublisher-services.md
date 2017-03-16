@@ -90,6 +90,9 @@ See section 7.1.2 Service Group.
 
 ### 9.1.3 Signed Service Metadata
 
+#### 9.1.3.1 Purpose of API 
+Allow retrieval of a business capability for a particular document type. This can be done via an intermediary step which involves retrieving a list of document locations for a document identifier. Alternatively, the client can retrieve a signed service metadata document by accessing the resource with the participant identifier and document identifier. 
+
 #### 9.1.3.2 Behaviour of API
 
 This API does not have side effects and will return a Signed Service Metadata element as per the OASIS standard (OASIS, 2014).
