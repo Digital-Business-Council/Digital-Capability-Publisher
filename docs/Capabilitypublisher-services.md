@@ -299,7 +299,43 @@ scheme identifier | urn:oasis:tc:ebcore:partyid-type:catalog-identifier:scheme-i
 id |<identifier>  E.g.  <ABN Number> |
 
 Example URL 
+
 ![deleteservicegroup-resourceURL_Logo](/images/deleteservicegroup-resourceURL.PNG) 
+
+
+#### 9.2.3.4 Request Headers 
+
+| | | | | 
+| ---| ---| ---| ---|
+**Header** | **Optional** | **Type** | **Description**|
+NA | | | | |
+
+#### 9.2.3.5 Status Codes & Error Conditions 
+
+| | | | |
+| ---| ---| ---| ---|
+**HTTP Status Code**| **Message** | **Category**| **Additional Info**|
+204 | No Content | Success | The resource has been removed. |
+400 | Bad Request | Error | The server cannot or will not process the request due to something that is perceived to be a client error. |
+403 | Forbidden | Error | The server understood the request, but is refusing to fulfill it. Return this if there is a problem with the client certificate. |
+404 | Not Found |Error |The origin server did not find a current representation for the target resource or is not willing to disclose that one exists. |
+5xx | Server Error |Error | Any appropriate HTTP server error |
+
+
+
+
+
+
+HTTP Status Code 
+
+Message 
+
+Category 
+
+Additional Info 
+
+
+
 
 
 
