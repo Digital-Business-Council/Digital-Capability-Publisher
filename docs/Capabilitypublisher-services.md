@@ -216,14 +216,18 @@ Colons in the URL need to be encoded as per (Berners-Lee, Fielding, & Masinter, 
 scheme identifier | urn:oasis:tc:ebcore:partyid-type:catalog-identifier:scheme-in-catalog |
 id | <identifier>  E.g. <ABN Number> |
 
-
-
-
-
 Example URL
+
 ![servicegroup-resourceURL_Logo](/images/servicegroup-resourceURL.PNG)
 
 #### 9.2.2.5 Request Headers
+
+| | | | |
+| ---| ---| ---| ----|
+**Header**| **Optional**| **Type**| **Description**|
+Content-Type | Mandatory | String | text/xml |
+
+
 
 #### 9.2.2.6 Request Body
 
@@ -231,6 +235,7 @@ The request body may optionally contain a ServiceGroup element. The ServiceMetad
 
 This method does allow updates to extension elements.
 
+![servicegroup-resourcebody_Logo](/images/servicegroup-resourcebody.PNG)
 #### 9.2.2.7 Request Field References
 
 See section 7.1.2 Service Group. The request should not provide a ServiceMetadataReferenceCollection element. 
