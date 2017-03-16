@@ -279,7 +279,7 @@ Delete an entry for a participant in the Digital Capability Publisher. This meth
 #### 9.2.3.2 Behaviour of API 
 This method can only be called once. Subsequent calls will result in a 404 Not Found response. 
 
-##### 9.2.3.3 Resource location 
+#### 9.2.3.3 Resource location 
 
 | | | |
 | ---| ---| ---|
@@ -290,6 +290,16 @@ DELETE | Yes | Client Certificate |
 The ServiceGroup resource has the following location: 
 
 ![deleteservicegroup-resource_Logo](/images/deleteservicegroup-resource.PNG)
+
+Colons in the URL need to be encoded as per (Berners-Lee, Fielding, & Masinter, 2005). 
+
+| | |
+| --| ---|
+scheme identifier | urn:oasis:tc:ebcore:partyid-type:catalog-identifier:scheme-in-catalog |
+id |<identifier>  E.g.  <ABN Number> |
+
+Example URL 
+![deleteservicegroup-resourceURL_Logo](/images/deleteservicegroup-resourceURL.PNG) 
 
 
 
