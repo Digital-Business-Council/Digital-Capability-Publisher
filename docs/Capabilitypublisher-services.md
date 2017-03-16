@@ -384,3 +384,19 @@ Date | Mandatory | String | The date and time that the message was originated. |
 | ---| ---| ---| ---|
 **Header** | **Optional** | **Type** | **Description**|
 Date | Mandatory | String | The date and time that the message was originated. |
+
+### 9.2.5 Delete Service Metadata 
+
+#### 9.2.5.3 Resource Location 
+
+| | | |
+| --| --| ---|
+Request URL | http://<dcp domain>/{scheme identifier}::{id}/services/{document identifier type}::{root namespace}::{document element local name}[##{Subtype identifier}] |
+HTTP Method | SSL/TLS | Authentication Mechanism |
+DELETE | Yes | Client Certificate |
+
+See 9.1.3 Signed Service Metadata for the structure of the resource location and examples. 
+
+#### 9.2.5.4 Request Headers 
+
+
