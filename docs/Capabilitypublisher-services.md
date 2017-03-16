@@ -125,8 +125,10 @@ Document element local name | core-invoice-1 |
 Subtype identifier | urn:www.digitalbusinesscouncil.com.au:dbc:einvoicing:process:einvoicing01:ver1.0 |
 
 
-
 Example
+
+![Signedservicemetadata-resourceexample_Logo](/images/Signedservicemetadata-resourceexample.PNG)
+
 
 #### 9.1.3.5 Request Headers
 
