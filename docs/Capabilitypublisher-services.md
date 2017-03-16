@@ -37,3 +37,13 @@ GET | No | N/A |
 The ServiceGroup resource has the following location: 
 ![servicegroup-resource_Logo](/images/servicegroup-resource.PNG) 
 
+Colons in the URL need to be encoded as per (Berners-Lee, Fielding, & Masinter, 2005).
+| | | 
+| --- |------- |
+scheme identifier | urn:oasis:names:tc:ebcore:partyid-type:iso6523:<scheme e.g. 0151> |
+id | e.g. <abn number> |
+
+Example URL 
+
+![servicegroupresource-URL_Logo](/images/servicegroup-resourceURL.PNG)
+
