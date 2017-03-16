@@ -399,4 +399,34 @@ See 9.1.3 Signed Service Metadata for the structure of the resource location and
 
 #### 9.2.5.4 Request Headers 
 
+| | | | |
+| ---| ---| ---| ---|
+**Header** | **Optional** | **Type** | **Description**|
+NA | | | |
+
+#### 9.2.5.5 Status Codes & Error Conditions
+
+| | | | |
+| ---| ---| ---| ---|
+**HTTP Status Code**| **Message** | **Category**| **Additional Info**|
+204 | No Content | Success | The resource has been removed. |
+400 | Bad Request | Error | The server cannot or will not process the request due to something that is perceived to be a client error. |
+403 | Forbidden | Error | The server understood the request, but is refusing to fulfill it. Return this if there is a problem with the client certificate. |
+404 | Not Found | Error |The origin server did not find a current representation of the target resource or is not willing to disclose that one exists. |
+5xx | Server Error | Error | Any appropriate HTTP server error |
+
+
+#### 9.2.5.6 Response Headers 
+
+204 No Content 
+
+| | | | |
+| ---| ---| ---| ---|
+**Header** | **Optional** | **Type** | **Description**|
+Date | Mandatory | String | The date and time that the message was originated. |
+
+
+
+
+
 
