@@ -57,5 +57,15 @@ Example URL
 Accept | Optional | String | text/xml |
 
 
+#### 9.1.2.6 Status Codes & Error Conditions 
+
+| | | | |
+| --- |------- | -----| -----|
+**HTTP Status Code**| **Message**| **Category**| **Additional Info**|
+200 | Ok | Success | Returns a ServiceGroup element | 
+404 | Not Found | Error | The origin server did not find a current representation for the target resource or is not willing to disclose that one exists. |
+5xx | Server Error | Error | Any appropriate HTTP server error |
+
+
 
 
