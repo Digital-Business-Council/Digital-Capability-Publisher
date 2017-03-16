@@ -128,3 +128,23 @@ See section 7.1.1 Signed Service Metadata.
 ## 9.2 Management API
 
 A management API may be implemented by a Digital Capability Publisher Provider. Management of information in a Digital Capability Publisher may also be offered through a web based user interface. This section describes an example of a management API using the HTTP protocol. 
+
+### 9.2.1 Security
+
+The management APIs must only be made available over HTTPS using TLS1.2 as a minimum. Fallback to earlier versions of TLS or SSL must not be used. TLS versions with known vulnerabilities must not be used. 
+
+The management APIs are protected and requires clients to authenticate using a client certificate. The client as well as server certificates for both access points and Digital Capability Publishers are published in the Digital Capability Locator and should be used to verify peer certificates. 
+
+### 9.2.2 Create and Update Service Group
+#### 9.2.2.1 Purpose of the API
+
+Create or update an entry for a participant in the Digital Capability Publisher. This method can be used to add extensions to a participant entry in the Digital Capability Publisher. When updating the Service Group, the request must include a Service Group element. This will not update existing Service Metadata and Service Metadata Reference elements should not be provided.
+
+#### 9.2.2.2 Behaviour of API
+
+This method is idempotent and the resource will only be created once. If the resource exists and the body is empty, nothing changes and the method returns 200 Ok. If a ServiceGroup element is provided it will replace the existing one. 
+
+If the resource does not exist, a resource is created for the provided location.
+
+#### 9.2.2.3 Sequence Diagrams
+
