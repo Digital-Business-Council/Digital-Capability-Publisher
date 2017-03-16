@@ -25,8 +25,12 @@ SUC002 | Digital Capability Publisher, Access Point, Digital Capability Locator 
 SUC003 | Access Point, Digital Capability Publisher | Register Capability | Maintenance | Implementation guides for: Digital Capability Publisher and Access Point |
 SUC005 | Access Point, Digital Capability Publisher, Digital Capability Locator | Lookup Participant's Digital Capabilities (this includes SUC006) | Sending a business document | Implementation guides for: Digital Capability Locator, Digital Capability Publisher and Access Point |
 SUC006 | Access Point, Digital Capability Locator | Lookup Digital Capability Publisher Alias Address |Sending a business document |  Implementation guides for: Access Point and Digital Capability Locator |
-
-
+SUC013 | Access Point, Digital Capability Publisher, Digital Capability Locator | Remove Digital Capability Publisher Alias Address | Maintenance | Implementation guides for: Access Point, Digital Capability Publisher and Digital Capability Locator |
+SUC014 | Access Point, Digital Capability Publisher | Update Capability | Maintenance | Implementation guides for: Digital Capability Publisher and Access Point |
+SUC015 | Access Point, Digital Capability Publisher | Remove Capability | Maintenance | Implementation guides for: Digital Capability Publisher and Access Point |
+BUC033 | Access Point, Digital Capability Publisher, Digital Capability Locator | List of Participant’s Digital Capabilities (Note: looking up all a participant’s capabilities is optional, and could be used by the sender to determine a trading partner’s ability to receive business documents) (this includes SUC006) | Maintenance/ Sending a business document | Implementation guides for: Digital Capability Locator, Digital Capability Publisher and Access Point |
+BUC036 | Access Point, Digital Capability Publisher, Digital Capability Locator | Business On-boarding (note: this includes a business new to eInvoicing or a business changing provider) (includes SUC002, SUC003 and SUC014) | eDelivery On-boarding / Maintenance |Implementation guides for: Access Point, Digital Capability Publisher and Digital Capability Locator |
+BUC100 | Access Point, Digital Capability Publisher, Digital Capability Locator | Send Business Document to Recipient (includes SUC005 – Lookup Participant’s Digital Capability) | Sending a business document |Implementation guides for: Access Point, Digital Capability Publisher and Digital Capability Locator |
 
 
 
