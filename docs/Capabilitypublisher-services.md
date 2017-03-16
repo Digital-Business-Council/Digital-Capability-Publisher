@@ -149,3 +149,35 @@ If the resource does not exist, a resource is created for the provided location.
 #### 9.2.2.3 Sequence Diagrams
 
 ![create-service-group.Logo](/images/Create-service-group.PNG)
+
+![update-service-group.Logo](/images/Update-service-group.PNG)
+
+#### 9.2.2.4 Resource Location
+
+The Service Group resource has the following location:
+
+Colons in the URL need to be encoded as per (Berners-Lee, Fielding, & Masinter, 2005).
+
+Example URL
+
+#### 9.2.2.5 Request Headers
+
+#### 9.2.2.6 Request Body
+
+The request body may optionally contain a ServiceGroup element. The ServiceMetadataReferenceCollection element is not required and should be ignored. This element is implied by the document resources assigned to a participant. 
+
+This method does allow updates to extension elements.
+
+#### 9.2.2.7 Request Field References
+
+See section 7.1.2 Service Group. The request should not provide a ServiceMetadataReferenceCollection element. 
+
+#### 9.2.2.8 Status Codes & Error Conditions
+
+#### 9.2.2.9 Response Headers
+
+201 CREATED
+
+204 No Content
+
+### 9.2.3 Delete Service Group
