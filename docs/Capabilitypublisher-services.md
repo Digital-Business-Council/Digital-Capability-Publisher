@@ -345,6 +345,40 @@ Request URL | http://<dcp domain>/{scheme identifier}::{id}/services/{document i
 HTTP Method | SSL/TLS | Authentication Mechanism |
 PUT | Yes | Client Certificate |
 
+See 9.1.3 Signed Service Metadata for the structure of the resource location and examples. 
+
+#### 9.2.4.5 Request Headers 
+
+| | | | |
+| ---| ---| ---| ---|
+**Header** | **Optional** | **Type** | **Description**|
+Content-Type | Mandatory | String | text/xml |
+
+
+
+
+#### 9.2.4.8 Status Codes & Error Conditions 
+
+| | | | |
+| ---| ---| ---| ---|
+**HTTP Status Code**| **Message** | **Category**| **Additional Info**|
+201 | Created | Success | The request has been fulfilled and has resulted in one or more new resources being created. |
+204 | No Content | Success | If the body was not empty and the participant identifier and document identifier matched the URL, the resource is updated. |
+400 | Bad Request | Error | The server cannot or will not process the request due to something that is perceived to be a client error. |
+403 | Forbidden | Error | The server understood the request, but is refusing to fulfill it. Return this if there is a problem with the client certificate. |
+5xx | Server Error | Error | Any appropriate HTTP server error |
+
+#### 9.2.4.9 Response Headers 
+
+201 CREATED 
+
+| | | | |
+| ---| ---| ---| ---|
+**Header** | **Optional** | **Type** | **Description**|
+Location | Mandatory | String | The location of the created resource. Should match the resource location used to create it. |
+Date | Mandatory | String | The date and time that the message was originated. |
+
+
 
 
 
