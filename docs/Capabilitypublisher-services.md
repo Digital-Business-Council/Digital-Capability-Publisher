@@ -148,3 +148,4 @@ If the resource does not exist, a resource is created for the provided location.
 
 #### 9.2.2.3 Sequence Diagrams
 
+![create-service-group.Logo](/images/Create-service-group.PNG)
