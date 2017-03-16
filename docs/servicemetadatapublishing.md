@@ -74,4 +74,6 @@ Actual values depend on the scheme identifier and document identifier types. The
 
 The resource address of the Service Group is: 
 
+![Location-servicegroup_Logo](/images/Location-servicegroup.PNG)
+
 Actual values depend on the scheme identifier. This value is described further in this implementation guide. 
