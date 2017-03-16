@@ -137,8 +137,6 @@ Example
 **Header**| **Optional**| **Type**| **Description**| 
 Accept | Optional | String | text/xml which is the default |
 
-
-
 #### 9.1.3.6 Status Codes & Error Conditions
 
 | | | | |
@@ -150,14 +148,17 @@ Accept | Optional | String | text/xml which is the default |
 5xx | Server Error | Error | Any appropriate HTTP server error |
 
 
-
-
-
 #### 9.1.3.7 Example Responses
 
 HTTP RESPONSE CODE: 200 (OK)
 
 #### 9.1.3.8 Response Headers
+
+| | | | |
+| ---| -----| ---| ---
+|**Header**| **Optional**| **Type**| **Description**| 
+Content-Type | Mandatory | String | text/xml |
+
 
 #### 9.1.3.9 Response Body -text/xml
 
