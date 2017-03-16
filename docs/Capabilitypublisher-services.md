@@ -27,3 +27,13 @@ Retrieving a list of capabilities can be done by corner 1, when a business user 
 ![getserviceAP_Logo](/images/Get-service-group-AP.PNG)
 
 #### 9.1.2.4 Resource Location 
+
+| | | |
+| --- |------- | -----|
+Request URL | http://<dcp domain>/{scheme identifier}::{id} | |
+HTTP Method |SSL/TLS |Authentication Mechanism |
+GET | No | N/A |
+
+The ServiceGroup resource has the following location: 
+![servicegroup-resource_Logo](/images/servicegroup-resource.PNG) 
+
