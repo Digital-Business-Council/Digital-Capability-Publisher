@@ -66,6 +66,7 @@ The management interface concerned with updates and changes to the Capability Pu
 
 The resource address of the Signed Service Metadata follows the BDX-smp standard:
 
+!(Signedservicemetadata-resourca_Logo](/images/Signedservicemetadata-resource.PNG)
 Actual values depend on the scheme identifier and document identifier types. These values will be published further in this implementation guide.
 
 ### 7.6.2 Location of Service Group
