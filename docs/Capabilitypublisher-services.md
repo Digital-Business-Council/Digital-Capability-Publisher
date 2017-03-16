@@ -252,9 +252,6 @@ See section 7.1.2 Service Group. The request should not provide a ServiceMetadat
 5xx | Server Error | Error | Any appropriate HTTP server error |
 
 
-
-
-
 #### 9.2.2.9 Response Headers
 
 201 CREATED
@@ -275,3 +272,26 @@ Date | Mandatory | String | The date and time that the message was originated. |
 
 
 ### 9.2.3 Delete Service Group
+
+#### 9.2.3.1 Purpose of the API 
+Delete an entry for a participant in the Digital Capability Publisher. This method will delete the Service Group and all related Service Metadata entries for the participant. 
+
+#### 9.2.3.2 Behaviour of API 
+This method can only be called once. Subsequent calls will result in a 404 Not Found response. 
+
+##### 9.2.3.3 Resource location 
+
+| | | |
+| ---| ---| ---|
+Request URL | http://<dcp domain>/{scheme identifier}::{id} | |
+HTTP Method | SSL/TLS | Authentication Mechanism |
+DELETE | Yes | Client Certificate |
+
+The ServiceGroup resource has the following location: 
+
+![deleteservicegroup-resource_Logo](/images/deleteservicegroup-resource.PNG)
+
+
+
+
+
