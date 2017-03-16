@@ -64,17 +64,22 @@ A process identifier has two componenets:
 
  - The scheme of the identifier; and
  - The unique ID within the scheme.
- 
- | | |
- | --| ---|
- scheme | dbc-procid |
+
+| | |
+| --| ---|
+scheme | dbc-procid |
 scheme-specific identifier | <unique process identifier> |
 
 *XML Example:*
 
-!(/images/Process-identifier_Logo](/images/Process-identifier.PNG)
+![/images/Process-identifier_Logo] (/images/Process-identifier.PNG)
 
 ## 8.4 Transport Profile
 
 A transport profile has one component
+
+| | |
+| ---| ---|
+Transport identifier| busdox-transport-ebms3-as4 |
+
 
