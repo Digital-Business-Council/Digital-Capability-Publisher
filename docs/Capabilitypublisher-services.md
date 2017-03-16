@@ -66,6 +66,24 @@ Accept | Optional | String | text/xml |
 404 | Not Found | Error | The origin server did not find a current representation for the target resource or is not willing to disclose that one exists. |
 5xx | Server Error | Error | Any appropriate HTTP server error |
 
+#### 9.1.2.7 Example Responses 
+
+HTTP RESPONSE CODE: 200 (Ok) 
+
+#### 9.1.2.8 Response Headers 
+
+| | | | |
+| --- |------- | -----| -----|
+**Header**| **Optional**| **Type**| **Description**|
+Content-Type | Mandatory | String | text/xml |
+
+#### 9.1.2.9 Response Body – text/xml 
+
+An example of a service group resource representation: 
+
+![Servicegroup-representation_Logo](/images/Servicegroup-representation.PNG)
 
 
+#### 9.1.2.10 Response Field Reference 
 
+See section 7.1.2 Service Group. 
