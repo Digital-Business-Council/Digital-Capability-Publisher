@@ -164,6 +164,7 @@ Content-Type | Mandatory | String | text/xml |
 
 An example response. The actual signature block has been omitted.
 
+![response-body_Logo](/images/response-body.PNG)
 
 #### 9.1.3.10 Response Field Reference
 
