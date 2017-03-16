@@ -378,7 +378,8 @@ Content-Type | Mandatory | String | text/xml |
 Location | Mandatory | String | The location of the created resource. Should match the resource location used to create it. |
 Date | Mandatory | String | The date and time that the message was originated. |
 
-
-
-
-
+204 No Content 
+| | | | |
+| ---| ---| ---| ---|
+**Header** | **Optional** | **Type** | **Description**|
+Date | Mandatory | String | The date and time that the message was originated. |
