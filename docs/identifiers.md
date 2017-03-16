@@ -22,6 +22,13 @@ The supported identifier schemes are described in (Digital Business Council, 201
 
 In an Australian context the use of the Australian Business Number is a valid identifier and the identifier would have the following components: 
 
+| | |
+| ---| ----|
+scheme | urn:oasis:names:tc:ebcore:partyid-type:iso6523:0151 |
+scheme-specific identifier | ABN Number | 
+
+
+
 Example
 
 urn:oasis:names:tc:ebcore:partyid-type:iso6523:0151::23601120601 
