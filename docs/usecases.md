@@ -14,3 +14,6 @@ The use cases listed in this section are separated in two categories:
 ## 6.2 Maintenance of Dynamic Discovery Information
 
 ![usecase-6.2.Logo](/images/Usecase-6.2.PNG)
+
+
+## 6.3 Use Case Descriptions
