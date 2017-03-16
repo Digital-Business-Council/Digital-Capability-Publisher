@@ -28,7 +28,6 @@ scheme | urn:oasis:names:tc:ebcore:partyid-type:iso6523:0151 |
 scheme-specific identifier | ABN Number | 
 
 
-
 Example
 
 urn:oasis:names:tc:ebcore:partyid-type:iso6523:0151::23601120601 
@@ -57,6 +56,8 @@ dbc-docid::urn:www.digitalbusinesscouncil.com.au:dbc:einvoicing:doctype:core-inv
 
 XML Example: 
 
+![documentidentifier_Logo](/images/document-identifier.PNG) 
+
 ## 8.3 Process Identifier
 
 A process identifier has two componenets:
@@ -66,7 +67,7 @@ A process identifier has two componenets:
  
 *XML Example:*
 
-![document-identifier_Logo] (/images/document-identifier.PNG) 
+
 
 ## 8.4 Transport Profile
 
