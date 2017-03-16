@@ -259,7 +259,7 @@ See section 7.1.2 Service Group. The request should not provide a ServiceMetadat
 
 201 CREATED
 
-| | | |
+| | | | |
 | --| ---| ---| ---|
 **Header** | **Optional** | **Type** | **Description** |
 Location | Mandatory | String | The location of the created resource. Should match the resource location used to create it. |
@@ -268,7 +268,7 @@ Date | Mandatory | String | The date and time that the message was originated. |
 
 204 No Content
 
-| | | |
+| | | | |
 | --| ---| ---| ---|
 **Header** | **Optional** | **Type** | **Description** |
 Date | Mandatory | String | The date and time that the message was originated. |
