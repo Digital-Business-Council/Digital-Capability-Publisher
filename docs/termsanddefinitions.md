@@ -19,7 +19,16 @@ Identification Scheme | The collection of Identifiers applicable for a given typ
 Identifier | A character string used to establish the identity of, and distinguish uniquely, one instance of an object within an Identification Scheme from all other objects within the same scheme. An Identifier may be a word, number, letter, symbol, or any combination of those. |
 Information Element | A semantic concept that can be defined independent of any particular data format. |
 Normative | Sections of a document conveying criteria to be fulfilled if compliance with the document is to be claimed and from which no deviation is permitted. |
-Participant | Council Accredited Access Point Providers, |
+Participant | Council Accredited Access Point Providers, Digital Capability Publisher and Digital Capability Locator services and the businesses, organisations and other entities who have adopted the Framework. |
+Participant Identifier | An identifier for a participant. |
+Profile | A conformant subset of a standard specification. |
+Schema | A World Wide Web Consortium (W3C) recommendation that specifies how to formally describe the XML Elements in an XML Document. |
+Service | An application able to process specific document types for specific business transactions. |
+Service Interface | A software interface to support a Service. |
+
+
+
+
 
 
 
