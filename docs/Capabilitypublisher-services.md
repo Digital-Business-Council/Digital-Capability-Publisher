@@ -87,3 +87,44 @@ An example of a service group resource representation:
 #### 9.1.2.10 Response Field Reference 
 
 See section 7.1.2 Service Group. 
+
+### 9.1.3 Signed Service Metadata
+
+#### 9.1.3.2 Behaviour of API
+
+This API does not have side effects and will return a Signed Service Metadata element as per the OASIS standard (OASIS, 2014).
+
+#### 9.1.3.3 Sequence Diagram
+
+![getserviceAP_Logo](/images/Get-service-group-AP.PNG)
+
+#### 9.1.3.4 Resource Location
+
+A signed service metadata resource has the following location: 
+
+Colons in the URL need to be encoded as per (Berners-Lee, Fielding, & Masinter, 2005). 
+
+Example
+
+#### 9.1.3.5 Request Headers
+
+#### 9.1.3.6 Status Codes & Error Conditions
+
+#### 9.1.3.7 Example Responses
+
+HTTP RESPONSE CODE: 200 (OK)
+
+#### 9.1.3.8 Response Headers
+
+#### 9.1.3.9 Response Body -text/xml
+
+An example response. The actual signature block has been omitted.
+
+
+#### 9.1.3.10 Response Field Reference
+
+See section 7.1.1 Signed Service Metadata.
+
+## 9.2 Management API
+
+A management API may be implemented by a Digital Capability Publisher Provider. Management of information in a Digital Capability Publisher may also be offered through a web based user interface. This section describes an example of a management API using the HTTP protocol. 
