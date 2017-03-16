@@ -90,7 +90,7 @@ See section 7.1.2 Service Group.
 
 ### 9.1.3 Signed Service Metadata
 
-#### 9.1.3.1 Purpose of API 
+### 9.1.3.1 Purpose of API 
 Allow retrieval of a business capability for a particular document type. This can be done via an intermediary step which involves retrieving a list of document locations for a document identifier. Alternatively, the client can retrieve a signed service metadata document by accessing the resource with the participant identifier and document identifier. 
 
 #### 9.1.3.2 Behaviour of API
@@ -132,7 +132,26 @@ Example
 
 #### 9.1.3.5 Request Headers
 
+| | | | |
+| ---| -----| ---| ---|
+**Header**| **Optional**| **Type**| **Description**| 
+Accept | Optional | String | text/xml which is the default |
+
+
+
 #### 9.1.3.6 Status Codes & Error Conditions
+
+| | | | |
+| ---| -----| ---| ---|
+**HTTP Status Code** | **Message** | **Category**| **Additional Info**|
+200 | Ok | Success | |
+404 | Not Found | Error | The origin server did not find a current representation for the target resource or is not willing to disclose that one exists. |
+406 | Not Acceptable | Error | The resource identified by the request is only capable of generating response entities which have content characteristics not acceptable according to the accept headers sent in the request. |
+5xx | Server Error | Error | Any appropriate HTTP server error |
+
+
+
+
 
 #### 9.1.3.7 Example Responses
 
