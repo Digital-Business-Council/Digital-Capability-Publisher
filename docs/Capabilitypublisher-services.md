@@ -24,6 +24,6 @@ This API does not have side effects and will return a Service Group element as p
 #### 9.1.2.3 Sequence Diagram 
 Retrieving a list of capabilities can be done by corner 1, when a business user wants to determine the capability of a trading partner. Or by corner 2, where an access point finds a suitable service to send a document to. 
 
-![getserviceAP_Logo] (/images/Get-service-group-AP.PNG)
+![getserviceAP_Logo](/images/Get-service-group-AP.PNG)
 
 #### 9.1.2.4 Resource Location 
