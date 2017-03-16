@@ -322,17 +322,14 @@ NA | | | | |
 5xx | Server Error |Error | Any appropriate HTTP server error |
 
 
+#### 9.2.3.6 Response Headers 
 
+204 No Content 
 
-
-
-HTTP Status Code 
-
-Message 
-
-Category 
-
-Additional Info 
+| | | | |
+| ---| ---| ---| ---|
+**Header** | **Optional** | **Type** | **Description**|
+Date | Mandatory | String | The date and time that the message was originated. |
 
 
 
