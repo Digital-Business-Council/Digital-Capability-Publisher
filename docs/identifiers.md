@@ -64,7 +64,9 @@ A process identifier has two componenets:
  - The scheme of the identifier; and
  - The unique ID within the scheme.
  
-XML Example:
+*XML Example:*
+
+![document-identifier_Logo] (/images/document-identifier.PNG) 
 
 ## 8.4 Transport Profile
 
