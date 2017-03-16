@@ -41,6 +41,12 @@ A document identifier has two components:
  - The unique ID within the scheme.
  
 The scheme defines the namespace in which the document is specified.
+
+| | |
+| ---| ----|
+scheme | dbc-docid |
+scheme-specific identifier | <unique document identifier> |
+
 The format as specified in the standard is: 
 
 {identifier scheme}::{rootNamespace}::{documentElementLocalName}[##{Subtype identifier}] 
