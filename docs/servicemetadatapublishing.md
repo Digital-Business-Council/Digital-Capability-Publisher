@@ -27,3 +27,27 @@ The location of a signed service metadata document depends on the following iden
 
 These two identifiers are required to return a capability record which may include a list of processes. To determine the correct process, the client needs to know the Process identifier. Each process defines a list of endpoints which are identified by a transport profile. 
 These identifiers are related to information in the messaging protocol as specified in the Digital Business Council Access Point Implementation Guide (Digital Business Council, 2016b) and are profiled for use in the Interoperability Framework (See also sections 7.2, 7.3 and 7.4). 
+
+### 7.1.2 Service Group
+
+The service group data structure contains a list of capabilities for a business. A Capability Publisher MUST support the service group resource location. 
+
+![service-group.Logo](/images/Service-group.PNG)
+
+Each Service Metadata Reference is a hyperlink to a Signed Service Metadata resource. 
+
+## 7.2 Signature Specification
+
+The signature MUST follow the standard described in (OASIS, 2014) section 3.6.2.
+
+## 7.3 Participant Identifier
+
+The participant identifier is based on the ebCore Party-ID standard (OASIS, 2010) and is profiled by the Digital Business Council (Digital Business Council, 2016c). Actual values will be defined in the implementation section of this document.
+
+## 7.4 Document Identifier
+
+Document Identifiers are described in the BDX-smp standard (OASIS, 2014, p. 16). Actual values will be defined in this implementation guide. 
+
+## 7.5 Process Identifier
+
+Process Identifiers are described in the BDX-smp standard (OASIS, 2014, p. 18). Actual values will be defined in this implementation guide. 
