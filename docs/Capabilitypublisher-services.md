@@ -49,3 +49,13 @@ Example URL
 
 ![servicegroupresource-URL_Logo](/images/servicegroup-resourceURL.PNG)
 
+#### 9.1.2.5 Request Headers
+
+| | | | |
+| --- |------- | -----| -----|
+**Header**| **Optional**| **Type**| **Description**|
+Accept | Optional | String | text/xml |
+
+
+
+
