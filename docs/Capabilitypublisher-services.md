@@ -379,6 +379,7 @@ Location | Mandatory | String | The location of the created resource. Should mat
 Date | Mandatory | String | The date and time that the message was originated. |
 
 204 No Content 
+
 | | | | |
 | ---| ---| ---| ---|
 **Header** | **Optional** | **Type** | **Description**|
