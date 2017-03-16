@@ -111,7 +111,7 @@ GET | No | N/A |
 
 A signed service metadata resource has the following location: 
 
-![Signedservicemetadataresource_Logo] (/images/Signedservicemetadata-resource.PNG) 
+![Signedservicemetadataresource_Logo](/images/Signedservicemetadata-resource.PNG) 
 
 Colons in the URL need to be encoded as per (Berners-Lee, Fielding, & Masinter, 2005). 
 
