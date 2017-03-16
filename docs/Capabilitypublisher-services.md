@@ -103,6 +103,14 @@ This API does not have side effects and will return a Signed Service Metadata el
 
 #### 9.1.3.4 Resource Location
 
+| | | |
+| --| ----| ----|
+Request URL | http://<dcp domain>/{scheme identifier}::{id}/services/{document identifier type}::{root namespace}::{document element local name}[##{Subtype identifier}] | |
+HTTP Method | SSL/TLS |Authentication Mechanism | 
+GET | No | N/A |
+
+
+
 A signed service metadata resource has the following location: 
 
 Colons in the URL need to be encoded as per (Berners-Lee, Fielding, & Masinter, 2005). 
