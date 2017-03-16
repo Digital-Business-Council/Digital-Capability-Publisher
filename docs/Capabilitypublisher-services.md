@@ -109,11 +109,22 @@ Request URL | http://<dcp domain>/{scheme identifier}::{id}/services/{document i
 HTTP Method | SSL/TLS |Authentication Mechanism | 
 GET | No | N/A |
 
-
-
 A signed service metadata resource has the following location: 
 
+![Signedservicemetadataresource_Logo] (/images/Signedservicemetadata-resource.PNG) 
+
 Colons in the URL need to be encoded as per (Berners-Lee, Fielding, & Masinter, 2005). 
+
+| | |
+| ---| ----|
+scheme identifier | urn:oasis:names:tc:ebcore:partyid-type:iso6523:<scheme> |
+Id |E.g. <ABN Number> Other identifier types defined by iso6523 are supported. |
+Document identifier type | dbc-docid |
+Root namespace | urn:www.digitalbusinesscouncil.com.au:dbc:einvoicing:doctype:core-invoice:xsd |
+Document element local name | core-invoice-1 |
+Subtype identifier | urn:www.digitalbusinesscouncil.com.au:dbc:einvoicing:process:einvoicing01:ver1.0 |
+
+
 
 Example
 
