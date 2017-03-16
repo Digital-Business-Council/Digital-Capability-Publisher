@@ -51,3 +51,25 @@ Document Identifiers are described in the BDX-smp standard (OASIS, 2014, p. 16).
 ## 7.5 Process Identifier
 
 Process Identifiers are described in the BDX-smp standard (OASIS, 2014, p. 18). Actual values will be defined in this implementation guide. 
+
+## 7.6 Discovery Interface
+
+The Capability Publisher REST interface provides access to two resources:
+
+ 1. Signed Service Metadata: the representation is an XML document with a service metadata and signature; and
+ 2. Service Group: the representation is an XML document with a list of locations for signed service metadata resources.
+ Representation of these two resources is per the BDX-smp standard. 
+ 
+The management interface concerned with updates and changes to the Capability Publisher are described further in this implementation guide.
+
+### 7.6.1 Location of Signed Service Metadata
+
+The resource address of the Signed Service Metadata follows the BDX-smp standard:
+
+Actual values depend on the scheme identifier and document identifier types. These values will be published further in this implementation guide.
+
+### 7.6.2 Location of Service Group
+
+The resource address of the Service Group is: 
+
+Actual values depend on the scheme identifier. This value is described further in this implementation guide. 
