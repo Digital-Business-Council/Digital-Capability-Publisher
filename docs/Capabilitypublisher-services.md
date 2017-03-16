@@ -331,9 +331,19 @@ NA | | | | |
 **Header** | **Optional** | **Type** | **Description**|
 Date | Mandatory | String | The date and time that the message was originated. |
 
+### 9.2.4 Create and Update Service Metadata 
 
 
 
+
+
+#### 9.2.4.4 Resource Location 
+
+| | | |
+| --| ---| ---|
+Request URL | http://<dcp domain>/{scheme identifier}::{id}/services/{document identifier type}::{root namespace}::{document element local name}[##{Subtype identifier}] | |
+HTTP Method | SSL/TLS | Authentication Mechanism |
+PUT | Yes | Client Certificate |
 
 
 
