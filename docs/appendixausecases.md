@@ -83,11 +83,11 @@ There are a number of scenarios covered by this use case:
      a. The business moves both services from one service provider to one or more service providers.
  
      b. The business moves only their Access Point service for a particular process to a new service provider.
- 
-     c. The business moves only the Digital Capability Publisher service to a new service provider.
- 
+     
+     c. The business moves only the Digital Capability Publisher service to a new service provider.
+     
      d. The business has Access Point and Digital Capability Publisher services with separate providers and consolidates the services in one provider. 
- 
+     
      e. The business has different Service Providers for Digital Capability Publisher and Access Point services, and moves each service to two new Service Providers. 
  
  **Assumptions**
@@ -147,83 +147,72 @@ There are a number of scenarios covered by this use case:
      a. At step 6, the New Service Provider determines the Business is entering into an agreement with a different Access Point service provider or is using its own Access Point;
   
      b. The New Service Provider obtains the Access Point endpoint address and transport profile it supports for each document and process, from either the Business (if using its own AP) or the Business’ Access Point Service Provider(s);
-  
-  c. The New Service Provider creates a capability record including Access Point endpoint address, transport profile, document and process types;
-  
-   i. <<include>> SUC003 – Register Capability. 
-   
-  d. Resume at step 9. 
+     
+     c. The New Service Provider creates a capability record including Access Point endpoint address, transport profile, document and process types;  i. <<include>> SUC003 – Register Capability. 
+     
+     d. Resume at step 9. 
 
 **2. Existing Participant; Business has an existing Digital Capability Publisher service and is changing only this service to the New Service Provider.**
 
 At step 6, the New Service Provider discovers the business has an existing Digital Capability Publisher service that needs to be changed to the New Service Provider’s Digital Capability Publisher service.
 
- a. The New Service Provider informs the Losing Digital Capability Publisher Provider they are now providing the business’ Digital Capability Publisher service.
- 
- b. The Losing Digital Capability Publisher Provider deprecates the business’ capability record in their Digital Capability Publisher.
- 
- c. The New Service Provider contacts the business’ existing Access Point Provider(s) to confirm the Access Point endpoint address and supported transport profile for each document type and process (the New Service Provider would have obtained this information when looking up the business’ capability record in step 5 of the basic flow).
- 
- d. The New Service Provider creates a capability record including Access Point endpoint address, transport profile, document types and process types.
- 
-  i. <<include>> SUC003 – Register Capability 
-  
- e. Resume at step 9. 
+     a. The New Service Provider informs the Losing Digital Capability Publisher Provider they are now providing the business’ Digital Capability Publisher service.
+     
+     b. The Losing Digital Capability Publisher Provider deprecates the business’ capability record in their Digital Capability Publisher.
+     
+     c. The New Service Provider contacts the business’ existing Access Point Provider(s) to confirm the Access Point endpoint address and supported transport profile for each document type and process (the New Service Provider would have obtained this information when looking up the business’ capability record in step 5 of the basic flow).
+     
+     d. The New Service Provider creates a capability record including Access Point endpoint address, transport profile, document types and process types. i. <<include>> SUC003 – Register Capability 
+     
+     e. Resume at step 9. 
 
 **3. Exisiting Participant; the business is moving both services to the New Service Provider.**
 
 At step 6, the New Service Provider discovers the business has an existing Digital Capability Publisher service that needs to be changed to the New Service Provider’s Digital Capability Publisher service.
 
- a. The New Service Provider informs the Losing Digital Capability Publisher Provider they are now providing the business’ Digital Capability Publisher service.
- 
- b. The Losing Digital Capability Publisher Provider deprecates the business’ capability record in their Digital Capability Publisher.
- 
- c. The New Service Provider informs the previous Access Point Provider they are the business’ nominated Access Point Provider.
- 
- d. The New Service Provider creates a capability record including the Access Point endpoint address(es), transport profile(s), document and process types.
- 
-  i. <<include>> SUC003 – Register Capability 
-  
- e. Resume at step 9. 
+     a. The New Service Provider informs the Losing Digital Capability Publisher Provider they are now providing the business’ Digital Capability Publisher service.
+     
+     b. The Losing Digital Capability Publisher Provider deprecates the business’ capability record in their Digital Capability Publisher.
+     
+     c. The New Service Provider informs the previous Access Point Provider they are the business’ nominated Access Point Provider.
+     
+     d. The New Service Provider creates a capability record including the Access Point endpoint address(es), transport profile(s), document and process types. i. <<include>> SUC003 – Register Capability 
+     
+     e. Resume at step 9. 
 
 **Exception flows**
 
-1. New Participant; Business is signing up to Access Point service with the New Service Provider, it will use another Service Provider for Digital Capability Publisher services.
+ **1. New Participant; Business is signing up to Access Point service with the New Service Provider, it will use another Service Provider for Digital Capability Publisher services.**
 
 At step 6, the New Service Provider determines the business will use a different service provider for a Digital Capability Publisher service.
 
- a. The Digital Capability Publisher service provide requests the New Service Provider’s Access Point details; 
+     a. The Digital Capability Publisher service provide requests the New Service Provider’s Access Point details; 
  
- b. The New Service Provider provides their Access Point endpoint address and transport profile, to enable the Digital Capability Publisher Service Provider to successfully create the business’ capability record;
+     b. The New Service Provider provides their Access Point endpoint address and transport profile, to enable the Digital Capability Publisher Service Provider to successfully create the business’ capability record;
  
- c. The Digital Capability Publisher Service Provider creates the capability record;
+     c. The Digital Capability Publisher Service Provider creates the capability record; i. <<include>> SUC003 – Register Capability. 
   
-  i. <<include>> SUC003 – Register Capability. 
+     d. The Digital Capability Publisher Provider requests addition of the business’ Digital Capability Locator entry in the Digital Capability Locator;  i. <<include>> SUC002 – Register Capability Address. 
   
- d. The Digital Capability Publisher Provider requests addition of the business’ Digital Capability Locator entry in the Digital Capability Locator; 
-  i. <<include>> SUC002 – Register Capability Address. 
+     e. The Digital Capability Publisher Provider informs the business that all access points have been added to the capability record for each document/process and the Digital Capability Locator entry has been created; 
   
-  e. The Digital Capability Publisher Provider informs the business that all access points have been added to the capability record for each document/process and the Digital Capability Locator entry has been created; 
-  
-  f. End flow. 
+     f. End flow. 
   
   **2. Exisiting Participant: THe Business is changing only to a new Access Point Service Provider for a particular document type and process.**
   
 At step 9, the service provider discovers the participant has an existing Access Point provider and will be providing this service for the business instead, however the business is retaining its current Digital Capability Publisher Service provider.
 
- a. The New Service Provider informs the previous Access Point service provider they are the business’ new Access Point provider for the particular document type and process; 
+     a. The New Service Provider informs the previous Access Point service provider they are the business’ new Access Point provider for the particular document type and process; 
  
- b. The New Service Provider looks up the holder of the business’ capability record; 
+     b. The New Service Provider looks up the holder of the business’ capability record; 
  
- c. The New Service Provider provides their Access Point endpoint address and accepted transport protocol for the process and document type to the Digital Capability Publisher Provider to successfully create the business’ capability record; 
+     c. The New Service Provider provides their Access Point endpoint address and accepted transport protocol for the process and document type to the Digital Capability Publisher Provider to successfully create the business’ capability record; 
  
- d. The Digital Capability Publisher Provider updates the capability record;
- 
-  i. <<includes>> SUC014 – Update Capability. 
+     d. The Digital Capability Publisher Provider updates the capability record; i. <<includes>> SUC014 – Update Capability. 
   
- e. The Digital Capability Publisher Provider informs the business their change in Access Point service has been updated and they are able to receive documents through the new Access Point; 
+     e. The Digital Capability Publisher Provider informs the business their change in Access Point service has been updated and they are able to receive documents through the new Access Point; 
  
- f. End flow. 
+     f. End flow. 
  
  ## SUC002 Register Digital Capability Publisher Alias Address
  
@@ -263,29 +252,30 @@ N/A
  
  **Exception Flows**
  1. At step 4, the Digital Capability Locator determines the requester is not authorised and sends an error response indicating this; 
+ 
  2. At step 5, the Digital Capability Locator is unable to add the Digital Capability Publisher Alias Address record successfully because the request format is invalid;
  
-  a. The Digital Capability Locator sends an error message response to the requester;
+    a. The Digital Capability Locator sends an error message response to the requester;
   
-  b. End flow.
+    b. End flow.
   
  3. At step 6, the Digital Capability Locator is unable to add the Digital Capability Publisher Alias Address record successfully to the Digital Capability Locator because the participant already has a record;
  
-  a. The Digital Capability Locator sends an error message response to the requester;
+    a. The Digital Capability Locator sends an error message response to the requester;
   
-  b. End flow.
+    b. End flow.
   
  4. At step 7, the Digital Capability Locator is unable to add the Digital Capability Publisher Alias Address record successfully because the Digital Capability Publisher identifier provided cannot be found;
  
-  a. The Digital Capability Locator sends an error message response to the requester;
+    a. The Digital Capability Locator sends an error message response to the requester;
   
-  b. End flow.
+    b. End flow.
   
  5. At step 8, the Digital Capability Locator is unable to add the Digital Capability Publisher Alias Address record successfully because the Digital Capability Publisher is not accredited;
  
-  a. The Digital Capability Locator sends an error message response to the requester;
+    a. The Digital Capability Locator sends an error message response to the requester;
   
-  b. End flow.
+    b. End flow.
   
   ##SUC006 Lookup Digital Capability Publisher Alias Address
   
