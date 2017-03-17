@@ -369,7 +369,7 @@ This use case describes the steps to remove a Digital Capability Publisher Alias
  7. The Digital Capability Locator sends a response to the requester confirming the location has been removed;
  8. End flow.
  
-**Exception Flows**
+### Exception Flows
 
  1. At step 3, the Digital Capability Locator determines the requester is not authorised to perform a removal of the Digital Address;
  
@@ -387,23 +387,23 @@ This use case describes the steps to remove a Digital Capability Publisher Alias
 
 ## SUC018 List of Accredited Access Points
 
-**Purpose**
+### Purpose
 
 This may be performed when a requester wants to discover all accredited Access Points accredited or determine the accreditation status of a particular Access Point.
 
-**Assumptions**
+### Assumptions
 
  1. This list will be readily available and not require authentication and authorisation checks for requesters.
 
-**Pre-conditions**
+### Pre-conditions
 
  1. The Access Points on the list have been accredited by the accreditation body.
  
-**Post-conditions**
+### Post-conditions
 
  1. The requester has obtained the list of accredited access points.
  
- **Basic Flow**
+### Basic Flow
  
   1. The requester sends a request to the Digital Capability Locator for a list of accredited access points;
   2. The Digital Capability Locator receives the request;
@@ -413,88 +413,93 @@ This may be performed when a requester wants to discover all accredited Access P
   
 ## SUC005 Lookup Participant's Digital Capability
 
-**Purpose**
+### Purpose
 
 This use case describes the steps required for a party to discover a specific capability for a particular document and process. The party would discover in the capability the service endpoint and transport Profile for a recipient’s Access Point for the specified document and process. 
 For example, an Access Point could be trying to determine if the Recipient actually accepts eInvoicing process documents such as Tax Invoices, where to send them and in what format.
 
-**Assumptions**
+### Assumptions
 
  1. Capability records should not be cached or stored outside of a Digital Capability Publisher, but the capability looked up in the Digital Capability Publisher each time needs to be discovered.
  
  2. Any party can determined the business processes and capability of a participant in eDelivery without being authenticated or authorised. 
 
-**Pre-conditions**
+### Pre-conditions
 
  1. The requester has obtained the Participant’s identifier and its scheme, the document type, and the business process.
  
-**Post-conditions**
+### Post-conditions
 
  1. The recipient’s digital capability for the document type and business process has been confirmed by a requester.
  2. The requester has determined the recipient’s Access Point endpoint address and transport Profile needed to send the business document.
  
-**Basic Flow**
+### Basic Flow
 
- 1. The requester establishes the location of the recipient’s Digital Capability Publisher; 
-
-a. <<include>> SUC006 - Lookup Participant’s DCP Alias Address. 
+ 1. The requester establishes the location of the recipient’s Digital Capability Publisher;  a. <<include>> SUC006 - Lookup Participant’s DCP Alias Address. 
 
  2. The requester constructs the request to retrieve recipient’s capability record including participant identifier, document type and process type;
+ 
  3. The requester sends the request to the Digital Capability Publisher endpoint;
+ 
  4. The Digital Capability Publisher receives the request and verifies the format is correct;
+ 
  5. The Digital Capability Publisher finds the appropriate capability record;
+ 
  6. The Digital Capability Publisher creates the response including the capability record of the Participant, containing the Access Point service endpoint and transport Profile for the specified process;
+ 
  7. The Digital Capability Publisher sends the response to the requester;
+ 
  8. The requester receives the response successfully; 
+ 
  9 . End flow.
  
-**Exception Flows**
+### Exception Flows
 
  1. At step 5, the Digital Capability Publisher cannot find a Capability Record for the participant;
  
- a. The Capability Record sends an error message response to the requester;
- 
- b. End flow. 
+      a. The Capability Record sends an error message response to the requester;
+      
+      b. End flow. 
 
  2. At step 2, the Digital Capability Publisher is unable to find the Capability record successfully because the request format is not valid;
  
-  a. The Digital Capability Publisher sends an error message response to the requester;
-  
-  b. End flow.
+     a. The Digital Capability Publisher sends an error message response to the requester;
+     
+     b. End flow.
   
  3. At step 2, the Digital Capability Publisher is unable to find the Capability record successfully because the identifier provided does not conform to an Identifier scheme supported by the Council;
  
-  a. The Digital Capability Publisher sends an error message response to the requester;
-  
-  b. End flow.
+    a. The Digital Capability Publisher sends an error message response to the requester;
+    
+    b. End flow.
   
  4. At step 2, the Digital Capability Publisher is unable to find the Capability successfully because the document type or process provided in the request does not conform to any in the capability record for that participant; 
  
-  a. The Digital Capability Publisher sends an error message response to the requester;
-  
-  b. End flow.
+    a. The Digital Capability Publisher sends an error message response to the requester;
+    
+    b. End flow.
   
 ## SUC003 Register Capability
- 
-**Purpose**
+
+### Purpose
 
 This use case describes the steps required for an Access Point provider or a participant to add the digital capability record for the participant on a Digital Capability Publisher. 
 
-**Assumptions**
+### Assumptions
 
  1. The party adding the capability record is authenticated and authorised to perform the addition of a capability record on behalf of the Participant.
  
-**Pre-conditions**
+### Pre-conditions
 
  1.The Access Point endpoint address and transport Profile for each of the Participant’s supported business processes is known to the party adding the capability record. 
  2. A participant cannot have an existing capability in any Digital Capability Publisher.
  
-**Post-conditions**
+### Post-conditions
 
  1. The participant’s capability record has been added to a Digital Capability Publisher, including the Access Point endpoint address for each business process and the transport Profile used for each process.
  2. There is only one Digital Capability Publisher record for a participant in any Digital Capability Publisher.
  
-**Basic Flow**
+### Basic Flow
 
  1. The Access Point provider or Participant sends the capability record addition request to the Digital Capability Publisher;
  2. The Digital Capability Publisher checks the requester is authorised to perform the addition of a capability record;
@@ -503,49 +508,49 @@ This use case describes the steps required for an Access Point provider or a par
  5. The Digital Capability Publisher creates the capability record;
  6. The Digital Capability Publisher adds the capability record successfully;
  7. The Digital Capability Publisher informs the requester of the successful addition of the record;
- 8. The Digital Capability Publisher adds the DCP Alias Address of the participant to the Digital Capability Locator; 
-
-a. <<include>> SUC002 - Register DCP Alias Address. 
-
+ 8. The Digital Capability Publisher adds the DCP Alias Address of the participant to the Digital Capability Locator; a. <<include>> SUC002 - Register DCP Alias Address. 
  9. End flow.
  
-**Exception Flows**
+### Exception Flows
 
  1. At step 2, the Digital Capability Publisher is unable to add the Capability Record because the requester is not authorised to add a record; 
  
-  a. The Digital Capability Publisher sends an error message response to the requester;
-  b. End flow.
+     a. The Digital Capability Publisher sends an error message response to the requester;
+     
+     b. End flow.
   
  4. At step 5, the Digital Capability Publisher is unable to add the Capability record successfully because the identifier provided does not conform to an Identifier scheme supported by the Council;
  
-  a. The Digital Capability Publisher sends an error message response to the requester;
-  b. End flow.
+     a. The Digital Capability Publisher sends an error message response to the requester;
+     
+     b. End flow.
  
  5. At step 5, the Digital Capability Publisher is unable to add the Capability Record successfully because the document identifier in the request does not conform to a supported document identifier scheme;
  
-  a. The Digital Capability Publisher sends an error message response to the requester;
-  b. End flow.
+     a. The Digital Capability Publisher sends an error message response to the requester;
+     
+     b. End flow.
   
 ## SUC014 Update Capability
 
-**Purpose**
+### Purpose
 
 This use case describes the steps to update a participant’s capability. This could be, for example, to change Access Point endpoint locations for a business process in the capability record, update a transport Profile for a process, or add a capability for a new business process.
 
-**Assumptions**
+### Assumptions
 
  1. The Access Point or Participant can update the Digital Capability Publisher.
  2. The requester needs to be authenticated and only authorised parties can update capability records. 
 
-**Pre-conditions**
+### Pre-conditions
 
  1. The participant has an existing capability record in the Digital Capability Publisher.
  
-**Post-conditions**
+### Post-conditions
 
  1. The participant’s capability record has had the appropriate detail updated.
  
-**Basic Flow**
+### Basic Flow
 
  1. The requester sends a request to the Digital Capability Publisher to update the capability record with the appropriate detail;
  2. The Digital Capability Publisher checks if the requester is authorised to an update to the participant’s record;
@@ -555,7 +560,7 @@ This use case describes the steps to update a participant’s capability. This c
  6. The Digital Capability Publisher responds with confirmation the capability record has been updated;
  7. End basic flow.
  
-**Exception Flows**
+### Exception Flows
 
  1. At step 2, the Digital Capability Publisher is unable to add the Capability Record because the requester is not authorised to add a record; 
 
@@ -607,23 +612,23 @@ This use case describes the steps to update a participant’s capability. This c
 
 ## SUC015 Remove Capability
 
-**Purpose**
+### Purpose
 This use case describes the steps to remove a participant’s capability. This could be to either remove a single business process from the participant’s record or to remove the entire capability for all business processes for a participant.
 
-**Assumptions**
+### Assumptions
 
  1. A requester could be the Access Point or the Participant themselves.
  2. The requester needs to be authenticated and only authorised parties can remove capability.
  
-**Pre-conditions**
+### Pre-conditions
 
  1. The participant has an existing capability record in the Digital Capability Publisher.
  
-**Post-conditions**
+### Post-conditions
 
  1. The participant’s capability record has had the appropriate detail(s) removed.
  
-**Basic Flow**
+### Basic Flow
 
  1. The requester sends a request to the Digital Capability Publisher to remove the required capability;
  2. The Digital Capability Publisher checks that the requester is authorised to remove the capability;
@@ -633,22 +638,22 @@ This use case describes the steps to remove a participant’s capability. This c
  6. The Digital Capability Publisher responds to the requester with confirmation the capability has been removed;
  7. End flow.
  
-**Exception Flows**
+### Exception Flows
 
  1. At step 2, the Digital Capability Publisher is unable to remove the capability because the requester is not authorised to add a record; 
 
-a. The Digital Capability Publisher sends an error message response to the requester; 
-
-b. End flow.
+      a. The Digital Capability Publisher sends an error message response to the requester; 
+      
+      b. End flow.
 
  2. At step 4 the Digital Capability Publisher cannot find a record belong to the participant; 
 
-a. The Digital Capability Publisher responds with an error message; 
-
-b. End flow.
+     a. The Digital Capability Publisher responds with an error message; 
+     
+     b. End flow.
 
  3. At step 3 the Digital Capability Publisher finds the request format to be invalid; 
 
-a. The Digital Capability Publisher responds with an error message; 
-
-b. End flow. 
+    a. The Digital Capability Publisher responds with an error message; 
+    
+    b. End flow. 
