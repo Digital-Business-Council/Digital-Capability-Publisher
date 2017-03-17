@@ -366,8 +366,17 @@ See 9.1.3 Signed Service Metadata for the structure of the resource location and
 **Header** | **Optional** | **Type** | **Description**|
 Content-Type | Mandatory | String | text/xml |
 
+#### 9.2.4.6 Request Body
 
+The request body must contain a Service Metadata element. Any existing processes and endpoints will be overwritten. 
 
+An example body is given below. The Process details are not shown. 
+
+![
+
+#### 9.2.4.7 Request Field References
+
+See section 7.1.1 Signed Service Metadata.
 
 #### 9.2.4.8 Status Codes & Error Conditions 
 
