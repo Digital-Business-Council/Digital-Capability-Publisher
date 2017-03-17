@@ -1,22 +1,22 @@
 # APPENDIX A: Use Cases
 ## BUC100 Send Business Document to Recipient
-**Purpose**
+### Purpose
 
 This high level use case describes the end to end process of sending a business document to a recipient. 
 
-**Assumptions**
+### Assumptions
 
 N/A
 
-**Preconditions**
+### Preconditions
 
  1. The Sender, Recipient, Capability Publisher and the Access Points are participants in eDelivery. 
 
-**Post conditions**
+### Post conditions
 
  1. The recipient receives the Sender’s business document successfully. 
 
-**Basic Flow**
+### Basic Flow
 
  1. The Sender populates the business document with the required information (identifier and scheme, document type and process);
 
@@ -36,26 +36,27 @@ N/A
 
 ## BUC033 List Participant's Capabilities
 
-**Purpose**
+### Purpose
+
 This use case describes the steps required for a party, possibly a sender, to discover the entire capabilities (ie every process) supported by a participant. 
 
 This use case is optional as it would only be useful if there were more than one process supported by a participant. It is not necessary for a Sender to discover all capabilities of a Recipient to send a business document from corners 1 to 4. 
 
-**Assumptions**
+### Assumptions
 
  1. Any party, even those not participating in eDelivery, can view a Participant’s Capabilities. 
 
  2. No authentication or authorisation checks are required.
 
-**Pre-conditions**
+### Pre-conditions
 
  1. The requester needs to know the identifier of the participant they are looking up.
 
-**Post-conditions**
+### Post-conditions
 
  1. The recipient's digital capabilities have been determined by a participant.
 
-**Basic Flow**
+### Basic Flow
 
  1. The requester establishes the location of the recipient’s digital capabilities;  a. <<include>> SUC006 - Lookup Participant’s DCP Alias Address; 
 
@@ -71,7 +72,8 @@ This use case is optional as it would only be useful if there were more than one
 
 ## BUC036 Business On-boarding
 
-**Purpose**
+### Purpose
+
 This use case describes the process to on-board a business to a single Digital Capability Publisher and/or one or more Access Point services for eDelivery. This does not include Access Point and Digital Capability Publisher service providers themselves, who are covered by the process described in BUC010 – Service Provider On-Boarding.
 
 There are a number of scenarios covered by this use case:
@@ -90,13 +92,13 @@ There are a number of scenarios covered by this use case:
      
      e. The business has different Service Providers for Digital Capability Publisher and Access Point services, and moves each service to two new Service Providers. 
  
- **Assumptions**
+### Assumptions
  
  1. A Service Provider can operate an Access Point and/or a Digital Capability Register but it is not mandatory to provide both. 
  
  2. Where a Service Provider can provide both services, whether a business chooses to use both services of that one service provider is completely at their discretion. 
 
-**Constraints**
+### Constraints
 
  1. The Service Provider, when providing both services, must create and maintain the business’ Digital Capability Locator entry and Digital Capability Publisher capability record. 
  
@@ -110,7 +112,7 @@ There are a number of scenarios covered by this use case:
  
  6. Only one capability record can exist in the eDelivery framework for a participant; this record contains all the capabilities of the business. 
  
- **Pre-conditions**
+### Pre-conditions
  
  1. The business has agreements with one or more Service Providers for receiving Council supported business processes and documents through one or more Access Point providers and only one Digital Capability Publisher provider, having either become a new participant or changed service providers.
  
@@ -118,7 +120,7 @@ There are a number of scenarios covered by this use case:
  
  3. The business is discoverable in the Digital Capability Locator and, if the new Digital Capability Publisher is listed in the Digital Capability Locator entry. 
 
-**Post-conditions**
+### Post-conditions
 
  1. The business has agreements with one or more Service Providers for receiving Council supported business processes and documents through one or more Access Point providers and only one Digital Capability Publisher provider, having either become a new participant or changed service providers.
  
@@ -126,7 +128,8 @@ There are a number of scenarios covered by this use case:
  
  3. The business is discoverable in the Digital Capability Locator and, if the new Digital Capability Publisher is listed in the Digital Capability Locator entry. 
  
- **Basic FLow- New Participant in eInvoicing; Business chooses to use a single Service Provider for both Access Point and Digital Capability Publisher services**
+### Basic FLow
+**New Participant in eInvoicing; Business chooses to use a single Service Provider for both Access Point and Digital Capability Publisher services**
  
  1. The business determines their requirements; 
  2. The business investigates the services offered and pricing of various service providers;
@@ -140,7 +143,7 @@ There are a number of scenarios covered by this use case:
  10. The New Service Provider informs the business the on-boarding activities have been completed;
  11. End flow. 
 
-**Alternate Flows**
+## Alternate Flows
 
  **1. New Participant; Business is signing up to Digital Capability Publisher service only (participant may have an Access Point of its own or is signing a separate agreement with a different Access Point Service Provider).**
 
@@ -180,7 +183,7 @@ At step 6, the New Service Provider discovers the business has an existing Digit
      
      e. Resume at step 9. 
 
-**Exception flows**
+### Exception flows
 
  **1. New Participant; Business is signing up to Access Point service with the New Service Provider, it will use another Service Provider for Digital Capability Publisher services.**
 
@@ -216,27 +219,27 @@ At step 9, the service provider discovers the participant has an existing Access
 
 ## SUC002 Register Digital Capability Publisher Alias Address
  
- **Purpose**
+### Purpose
  
 This use case describes the interaction required for the Identifier to be mapped to the Digital Capability Publisher Alias Address of a participant’s Digital Capability Publisher and this mapping added to the Digital Capability Locator, enabling the Participant to be discovered. 
 
-**Assumptions**
+### Assumptions
 
 N/A
 
-**Pre-conditions**
+### Pre-conditions
 
  1. The participant’s capability record has been added to an accredited Digital Capability Publisher. 
  2. The participant does not have a Digital Capability Publisher Alias Address already registered. 
  3. The Digital Capability Publisher has been accredited by the council and added to the Digital Capability Locator. 
  4. The Digital Capability Publisher has obtained the identifier and the identifier scheme of the participant. 
  
-**Post-conditions**
+### Post-conditions
 
  1. The Digital Capability Publisher Alias Address of the participant’s Digital Capability Publisher has been added to the Digital Capability Locator, with the Participant’s identifier mapped to the Digital Capability Publisher endpoint address. 
  2. The participant’s Digital Capability Publisher address is discoverable on the Digital Capability Locator. 
  
-**Basic Flow**
+### Basic Flow
 
  1. The requester constructs the Digital Capability Publisher Alias Address record addition request;
  2. The requester sends the Digital Capability Publisher Alias Address record addition request to the Digital Capability Locator;
@@ -250,7 +253,7 @@ N/A
  10. The Digital Capability Locator responds, informing the requester that the Digital Capability Publisher Alias Address has been published successfully; 
  11. End flow.
  
- **Exception Flows**
+### Exception Flows
  1. At step 4, the Digital Capability Locator determines the requester is not authorised and sends an error response indicating this; 
  
  2. At step 5, the Digital Capability Locator is unable to add the Digital Capability Publisher Alias Address record successfully because the request format is invalid;
@@ -277,26 +280,27 @@ N/A
   
       b. End flow.
   
- ## SUC006 Lookup Digital Capability Publisher Alias Address
+## SUC006 Lookup Digital Capability Publisher Alias Address
   
-  **Purpose**
+### Purpose
+
 This use case describes the steps required for a party to discover the Digital Capability Publisher Alias Address of a participant. 
 
-**Assumptions**
+### Assumptions
 
  1. The Digital Capability Locator does not supply the URL to the capability record in the Digital Capability Publisher, but only the URL of the Digital Capability Publisher, it is up to the requester to construct the location of the capability record URL in the subsequent request.
  2. The business document may have been generated by the sender and sent to the access point as part of sending a business document. The Access Point may be trying to discover the location of the capability record in order to send the business document to the recipient’s access point.
  3. Any participant can look up the Digital Capability Publisher Alias Address of another participant.
  
- **Pre-conditions**
+### Pre-conditions
  
  1. The requester and Digital Capability Publisher are participants in eDelivery.
  2. The requester is aware of the identifier and the identifier scheme of the participant in order to lookup the Digital Capability Publisher Alias Address.
   
- **Post-conditions**
+### Post-conditions
  1. The location of the recipient’s Digital Capability Publisher endpoint address has been determined by the requester.
   
- **Basic Flow**
+### Basic Flow
  
  1. The requester forms a query to locate the capability record of the recipient;
  2. The requester sends the query to their Domain Name System (DNS) server;
@@ -305,8 +309,8 @@ This use case describes the steps required for a party to discover the Digital C
  5. The Digital Capability Locator sends the query response to the requester;
  6. The requester successfully receives the query response;
  7. End flow.
-  
-**Alternate Flows**
+ 
+### Alternate Flows
 
  1. At step 3, the Digital Capability Locator is unavailable at the time of the query;
   a. The requester retries a specified amount of attempts;
@@ -315,7 +319,7 @@ This use case describes the steps required for a party to discover the Digital C
 
  2. At step 2, the Digital Capability Publisher Alias Address of a recipient’s capability has been previously looked up by the requester, stored locally and is still valid (the Time-To-Life has not expired). The capability location is then determined by the requester based on this cached record and the Digital Capability Locator does not need to be queried. 
  
-**Exception Flows**
+### Exception Flows
 
  1. At step 4 the Digital Capability Locator cannot locate the recipient’s Digital Capability Publisher Alias Address record and responds with an error message indicating this outcome;
  
@@ -336,24 +340,25 @@ This use case describes the steps required for a party to discover the Digital C
 
 ## SUC013 Remove Digital Capability Publisher Alias Address
 
-**Purpose**
+### Purpose
+
 This use case describes the steps to remove a Digital Capability Publisher Alias Address record from the Digital Capability Locator.
 
-**Assumptions**
+### Assumptions
 
  1. The participant no longer trades or decides not to participate in eDelivery.
  2. The Digital Capability Publisher or the participant can request removal the participant’s Digital Capability Publisher Alias Address, so long as they can be authenticated and their permissions allow this.
  3. The requester could be removing the record before adding a new one.
  
-**Pre-conditions**
+### Pre-conditions
 
  1. The participant has an existing Digital Capability Publisher Alias Address record.
  
-**Post-conditions**
+### Post-conditions
 
  1. The participant’s Digital Capability Publisher Alias Address record is no longer discoverable on the Digital Capability Locator.
  
-**Basic Flow**
+### Basic Flow
 
  1. The Digital Capability Publisher or participant itself sends a request to the Digital Capability Locator to remove the participant’s Digital Capability Publisher Alias Address record;
  2. The Digital Capability Locator receives the request;
