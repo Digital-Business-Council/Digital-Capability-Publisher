@@ -213,8 +213,8 @@ At step 9, the service provider discovers the participant has an existing Access
      e. The Digital Capability Publisher Provider informs the business their change in Access Point service has been updated and they are able to receive documents through the new Access Point;
      
      f. End flow. 
- 
- ## SUC002 Register Digital Capability Publisher Alias Address
+
+## SUC002 Register Digital Capability Publisher Alias Address
  
  **Purpose**
  
@@ -255,29 +255,29 @@ N/A
  
  2. At step 5, the Digital Capability Locator is unable to add the Digital Capability Publisher Alias Address record successfully because the request format is invalid;
  
-    a. The Digital Capability Locator sends an error message response to the requester;
+      a. The Digital Capability Locator sends an error message response to the requester;
   
-    b. End flow.
+      b. End flow.
   
  3. At step 6, the Digital Capability Locator is unable to add the Digital Capability Publisher Alias Address record successfully to the Digital Capability Locator because the participant already has a record;
  
-    a. The Digital Capability Locator sends an error message response to the requester;
+      a. The Digital Capability Locator sends an error message response to the requester;
   
-    b. End flow.
+      b. End flow.
   
  4. At step 7, the Digital Capability Locator is unable to add the Digital Capability Publisher Alias Address record successfully because the Digital Capability Publisher identifier provided cannot be found;
  
-    a. The Digital Capability Locator sends an error message response to the requester;
+      a. The Digital Capability Locator sends an error message response to the requester;
   
-    b. End flow.
+      b. End flow.
   
  5. At step 8, the Digital Capability Locator is unable to add the Digital Capability Publisher Alias Address record successfully because the Digital Capability Publisher is not accredited;
  
-    a. The Digital Capability Locator sends an error message response to the requester;
+      a. The Digital Capability Locator sends an error message response to the requester;
   
-    b. End flow.
+      b. End flow.
   
-  ##SUC006 Lookup Digital Capability Publisher Alias Address
+ ## SUC006 Lookup Digital Capability Publisher Alias Address
   
   **Purpose**
 This use case describes the steps required for a party to discover the Digital Capability Publisher Alias Address of a participant. 
@@ -318,24 +318,25 @@ This use case describes the steps required for a party to discover the Digital C
 **Exception Flows**
 
  1. At step 4 the Digital Capability Locator cannot locate the recipient’s Digital Capability Publisher Alias Address record and responds with an error message indicating this outcome;
+ 
  2. At step 2 the Digital Capability Locator domain is incorrect;
   
-  a. The DNS server responds with an error;
+     a. The DNS server responds with an error;
   
-  b. End flow.
+     b. End flow.
 
  3. At step 6 the Digital Capability Publisher Alias Address is not present in the Digital Capability Publisher Alias Address record;
  
-  a. The Digital Capability Locator responds to the query; 
+     a. The Digital Capability Locator responds to the query; 
 
-  b. The requester receives the response but cannot discover the location of the Participant’s Digital Capability Publisher;
+     b. The requester receives the response but cannot discover the location of the Participant’s Digital Capability Publisher;
   
-  c. End flow.
+     c. End flow.
   
- ## SUC013 Remove Digital Capability Publisher Alias Address
+
+## SUC013 Remove Digital Capability Publisher Alias Address
 
 **Purpose**
-
 This use case describes the steps to remove a Digital Capability Publisher Alias Address record from the Digital Capability Locator.
 
 **Assumptions**
@@ -366,17 +367,18 @@ This use case describes the steps to remove a Digital Capability Publisher Alias
 **Exception Flows**
 
  1. At step 3, the Digital Capability Locator determines the requester is not authorised to perform a removal of the Digital Address;
+ 
  2. At step 4, the Digital Capability Locator is unable to remove the Digital Capability Publisher Alias Address record successfully because the request format is not valid;
  
-  a. The Digital Capability Locator sends an error message response to the requester;
+     a. The Digital Capability Locator sends an error message response to the requester;
   
-  b. End flow.
+     b. End flow.
   
  3. At step 5, the Digital Capability Locator cannot find a Digital Capability Publisher Alias Address Record for the participant;
  
-  a. The Digital Capability Locator sends an error message response to the requester;
+     a. The Digital Capability Locator sends an error message response to the requester;
   
-  b. End flow.
+     b. End flow.
 
 ## SUC018 List of Accredited Access Points
 
@@ -552,56 +554,55 @@ This use case describes the steps to update a participant’s capability. This c
 
  1. At step 2, the Digital Capability Publisher is unable to add the Capability Record because the requester is not authorised to add a record; 
 
-a. The Digital Capability Publisher sends an error message response to the requester; 
+     a. The Digital Capability Publisher sends an error message response to the requester; 
 
-b. End flow. 
+     b. End flow. 
 
  2. At step 4, the Digital Capability Publisher cannot find a record belonging to the participant; 
 
-a. The Digital Capability Publisher responds with an error message; 
+     a. The Digital Capability Publisher responds with an error message; 
 
-b. End flow.
+     b. End flow.
 
  3. At step 3, the Digital Capability Publisher is unable to update the Capability Record successfully because the transport Profile in the request does not conform to the supported Council transport Profiles; 
 
-a. The Digital Capability Publisher sends an error message response to the requester; 
+     a. The Digital Capability Publisher sends an error message response to the requester; 
 
-b. End flow.
+     b. End flow.
 
  4. At step 3, the Digital Capability Publisher is unable to update the Capability record successfully because the request format is not valid; 
 
-a. The Digital Capability Publisher sends an error message response to the requester; 
+     a. The Digital Capability Publisher sends an error message response to the requester; 
 
-b. End flow.
+     b. End flow.
 
  5. At step 3, the Digital Capability Publisher is unable to update the Capability record successfully because the participant identifier provided does not conform to an Identifier scheme supported by the Council; 
 
-a. The Digital Capability Publisher sends an error message response to the requester; 
+     a. The Digital Capability Publisher sends an error message response to the requester; 
 
-b. End flow.
+     b. End flow.
 
  6. At step 3, the Digital Capability Publisher is unable to update the Capability record successfully because the Access Point endpoint address provided does not conform to the correct format; 
 
-a. The Digital Capability Publisher sends an error message response to the requester; 
+     a. The Digital Capability Publisher sends an error message response to the requester; 
 
-b. End flow.
+     b. End flow.
 
  7. At step 3, the Digital Capability Publisher is unable to update the Capability Record successfully because the document identifier in the request does not conform to a supported document identifier scheme; 
 
-a. The Digital Capability Publisher sends an error message response to the requester; 
+    a. The Digital Capability Publisher sends an error message response to the requester; 
 
-b. End flow.
+    b. End flow.
 
  8. At step 3, the Digital Capability Publisher is unable to update the Capability Record successfully because the process identifier in the request does not conform to a supported process identifier scheme; 
 
-a. The Digital Capability Publisher sends an error message response to the requester; 
+    a. The Digital Capability Publisher sends an error message response to the requester; 
 
-b. End flow.
+    b. End flow.
 
 ## SUC015 Remove Capability
 
 **Purpose**
-
 This use case describes the steps to remove a participant’s capability. This could be to either remove a single business process from the participant’s record or to remove the entire capability for all business processes for a participant.
 
 **Assumptions**
