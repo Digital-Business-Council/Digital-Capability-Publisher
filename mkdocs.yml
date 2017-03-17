@@ -1,18 +1,16 @@
 site_name: The Digital Capability Publisher
-repo_url: https://github.com/Digital-Business-Council/Digital_Capability_Publisher
+repo_url: https://github.com/Digital-Business-Council/Digital-Capability-Publisher
 pages:
-    - 'Disclaimer': 'disclaimer.md'
+    - 'Disclaimer': 'disclaimer.md '
     - 'Audience': 'index.md'
     - 'Overview': 'overview.md'
     - 'Conformance': 'conformance.md'
     - 'Distribution Pacakage': 'distributionpackage.md'
     - 'Terms and Definitions': 'termsanddefinitions.md'
-    - 'Use Cases': 'use-cases.md'
-    - 'AS4 Version 1.0 Profile (Normative)': 'AS4_version1.0_profile.md'
+    - 'Use Cases': 'usecases.md'
+    - 'Service Metadata Publishing (SMP) Version 1.0 Profile (Normative)': 'servicemetadatapublishing.md'
     - 'Identifiers': 'identifiers.md'
-    - 'Endpoint Discovery': 'endpoint-discovery.md'
-    - 'Generic Settings': 'generic-settings.md'
-    - 'Appendix A - PMode Parameters': 'appendix_A.md'
-    - 'References': 'references.md'
+    - 'Services Provided by the Capability Publisher': 'Capabilitypublisher-services.md '
+    - 'APPENDIX A: Use Cases': 'appendixausecases.md '
 theme: mkdocs
 
