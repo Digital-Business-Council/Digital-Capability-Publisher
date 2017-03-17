@@ -333,9 +333,21 @@ Date | Mandatory | String | The date and time that the message was originated. |
 
 ### 9.2.4 Create and Update Service Metadata 
 
+#### 9.2.4.1 Purpose of the API
 
+Create or update one or more Service Metadata records for a participant identifier. This API can be used to create as well as update entries. When updating entries existing entries will be overwritten. A client should therefore submit a complete and correct list of service metadata records. 
 
+#### 9.2.4.2 Behaviour of API
 
+This method is idempotent and the resource will only be created once. If a Service Information element is provided it will replace the existing one. 
+
+If the resource does not exist, a resource is created for the provided location. This includes the resource for Service Group.
+
+#### 9.2.4.3 Sequence Diagrams
+
+![create-service-metadata.Logo](/images/Create-service-metadata.PNG)
+
+![update-service-metadata.Logo](/images/Update-service-metadata.PNG)
 
 #### 9.2.4.4 Resource Location 
 
