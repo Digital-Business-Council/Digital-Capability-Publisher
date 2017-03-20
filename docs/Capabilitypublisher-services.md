@@ -30,7 +30,7 @@ Retrieving a list of capabilities can be done by corner 1, when a business user 
 
 | | | |
 | --- |------- | -----|
-Request URL | http://<dcp domain>/{scheme identifier}::{id} | |
+Request URL | http://&lt;dcp domain &gt;/{scheme identifier}::{id} | |
 HTTP Method |SSL/TLS |Authentication Mechanism |
 GET | No | N/A |
 
@@ -43,7 +43,7 @@ Colons in the URL need to be encoded as per (Berners-Lee, Fielding, & Masinter, 
 | | | 
 | --- |------- |
 scheme identifier | urn:oasis:names:tc:ebcore:partyid-type:iso6523:<scheme e.g. 0151> |
-id | e.g. <abn number> |
+id | e.g. &lt;abn number &gt; |
 
 Example URL 
 
