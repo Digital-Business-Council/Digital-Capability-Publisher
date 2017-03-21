@@ -44,7 +44,7 @@ The scheme defines the namespace in which the document is specified.
 | | |
 | ---| ----|
 scheme | dbc-docid |
-scheme-specific identifier | <unique document identifier> |
+scheme-specific identifier | &lt;unique document identifier&gt; |
 
 The format as specified in the standard is: 
 
@@ -68,11 +68,11 @@ A process identifier has two componenets:
 | | |
 | --| ---|
 scheme | dbc-procid |
-scheme-specific identifier | <unique process identifier> |
+scheme-specific identifier | &lt;unique process identifier&gt; |
 
 *XML Example:*
 
-![/images/Process-identifier_Logo] (/images/Process-identifier.PNG)
+![/images/Process-identifier_Logo](/images/Process-identifier.PNG)
 
 ## 8.4 Transport Profile
 
