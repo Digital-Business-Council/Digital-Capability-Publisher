@@ -373,7 +373,9 @@ The request body must contain a Service Metadata element. Any existing processes
 
 An example body is given below. The Process details are not shown. 
 
-![
+
+![createupdaterequestbody _Logo](/images/createupdaterequestbody.PNG)
+
 
 #### 9.2.4.7 Request Field References
 
