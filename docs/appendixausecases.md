@@ -491,7 +491,8 @@ This use case describes the steps required for an Access Point provider or a par
  
 ### Pre-conditions
 
- 1.The Access Point endpoint address and transport Profile for each of the Participant’s supported business processes is known to the party adding the capability record. 
+ 1. The Access Point endpoint address and transport Profile for each of the Participant’s supported business processes is known to the party adding the capability record. 
+ 
  2. A participant cannot have an existing capability in any Digital Capability Publisher.
  
 ### Post-conditions
