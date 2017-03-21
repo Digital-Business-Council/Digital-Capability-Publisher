@@ -138,8 +138,8 @@ There are a number of scenarios covered by this use case:
  5. The New Service Provider determines if the business’ capability is already registered in a capability register (this also determines if the client has an Access Point service in the framework also); 
  6. The business does not have an existing capability record registered and requires it to be created in the New Service Provider’s Digital Capability Publisher; 
  7. The New Service Provider determines the client does not have an Access Point service and will use the New Service Provider’s AP; 
- 8. The New Service Provider adds its own supported Access Point address, transport profiles, document types and processes to the business’ capability record in its own Digital Capability Publisher; a. <<include>> SUC003 – Register Capability. 
- 9. The New Service Provider requests the capability address (Digital Capability Locator entry) be added to the Digital Capability Locator; a. <<include>> SUC002 – Register Capability Address. 
+ 8. The New Service Provider adds its own supported Access Point address, transport profiles, document types and processes to the business’ capability record in its own Digital Capability Publisher; a. <&lt;include&gt;> SUC003 – Register Capability. 
+ 9. The New Service Provider requests the capability address (Digital Capability Locator entry) be added to the Digital Capability Locator; a. <&lt;include&gt;> SUC002 – Register Capability Address. 
  10. The New Service Provider informs the business the on-boarding activities have been completed;
  11. End flow. 
 
@@ -435,7 +435,7 @@ For example, an Access Point could be trying to determine if the Recipient actua
  
 ### Basic Flow
 
- 1. The requester establishes the location of the recipient’s Digital Capability Publisher;  a. <<include>> SUC006 - Lookup Participant’s DCP Alias Address. 
+ 1. The requester establishes the location of the recipient’s Digital Capability Publisher;  a. <&lt;include&gt;> SUC006 - Lookup Participant’s DCP Alias Address. 
 
  2. The requester constructs the request to retrieve recipient’s capability record including participant identifier, document type and process type;
  
@@ -508,7 +508,7 @@ This use case describes the steps required for an Access Point provider or a par
  5. The Digital Capability Publisher creates the capability record;
  6. The Digital Capability Publisher adds the capability record successfully;
  7. The Digital Capability Publisher informs the requester of the successful addition of the record;
- 8. The Digital Capability Publisher adds the DCP Alias Address of the participant to the Digital Capability Locator; a. <<include>> SUC002 - Register DCP Alias Address. 
+ 8. The Digital Capability Publisher adds the DCP Alias Address of the participant to the Digital Capability Locator; a. <&lt;include&gt;> SUC002 - Register DCP Alias Address. 
  9. End flow.
  
 ### Exception Flows
