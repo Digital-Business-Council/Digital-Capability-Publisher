@@ -117,8 +117,8 @@ Colons in the URL need to be encoded as per (Berners-Lee, Fielding, & Masinter, 
 
 | | |
 | ---| ----|
-scheme identifier | urn:oasis:names:tc:ebcore:partyid-type:iso6523:<scheme> |
-Id |E.g. <ABN Number> Other identifier types defined by iso6523 are supported. |
+scheme identifier | urn:oasis:names:tc:ebcore:partyid-type:iso6523:&lt;scheme> |
+Id |E.g. &lt;ABN Number> Other identifier types defined by iso6523 are supported. |
 Document identifier type | dbc-docid |
 Root namespace | urn:www.digitalbusinesscouncil.com.au:dbc:einvoicing:doctype:core-invoice:xsd |
 Document element local name | core-invoice-1 |
