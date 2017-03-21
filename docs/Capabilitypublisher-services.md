@@ -42,7 +42,7 @@ Colons in the URL need to be encoded as per (Berners-Lee, Fielding, & Masinter, 
 
 | | | 
 | --- |------- |
-scheme identifier | urn:oasis:names:tc:ebcore:partyid-type:iso6523:<scheme e.g. 0151> |
+scheme identifier | urn:oasis:names:tc:ebcore:partyid-type:iso6523:&lt;scheme e.g. 0151> |
 id | e.g. &lt;abn number &gt; |
 
 Example URL 
@@ -105,7 +105,7 @@ This API does not have side effects and will return a Signed Service Metadata el
 
 | | | |
 | --| ----| ----|
-Request URL | http://<dcp domain>/{scheme identifier}::{id}/services/{document identifier type}::{root namespace}::{document element local name}[##{Subtype identifier}] | |
+Request URL | http:// &lt;dcp domain>/{scheme identifier}::{id}/services/{document identifier type}::{root namespace}::{document element local name}[##{Subtype identifier}] | |
 HTTP Method | SSL/TLS |Authentication Mechanism | 
 GET | No | N/A |
 
