@@ -22,7 +22,7 @@ N/A
 
  2. The Sender sends the business document to their Access Point;
 
- 3. The sending Access Point performs the business discovery process to obtain the capability of the recipient (which includes obtaining the service endpoint of the receiving Access Point); a. <<include>> SUC005 – Lookup Participant’s Digital Capability.
+ 3. The sending Access Point performs the business discovery process to obtain the capability of the recipient (which includes obtaining the service endpoint of the receiving Access Point); a. <&lt;include&gt;> SUC005 – Lookup Participant’s Digital Capability.
 
  4. The sending Access Point sends the business document to the recipient’s nominated Access Point for the business document type;
 
@@ -58,7 +58,7 @@ This use case is optional as it would only be useful if there were more than one
 
 ### Basic Flow
 
- 1. The requester establishes the location of the recipient’s digital capabilities;  a. <<include>> SUC006 - Lookup Participant’s DCP Alias Address; 
+ 1. The requester establishes the location of the recipient’s digital capabilities;  a. <&lt;include&gt;> SUC006 - Lookup Participant’s DCP Alias Address; 
 
  2. The requester constructs the request to retrieve a recipient’s capability list;
 
