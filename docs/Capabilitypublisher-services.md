@@ -236,6 +236,7 @@ The request body may optionally contain a ServiceGroup element. The ServiceMetad
 This method does allow updates to extension elements.
 
 ![servicegroup-resourcebody_Logo](/images/servicegroup-resourcebody.PNG)
+
 #### 9.2.2.7 Request Field References
 
 See section 7.1.2 Service Group. The request should not provide a ServiceMetadataReferenceCollection element. 
@@ -283,7 +284,7 @@ This method can only be called once. Subsequent calls will result in a 404 Not F
 
 | | | |
 | ---| ---| ---|
-Request URL | http://<dcp domain>/{scheme identifier}::{id} | |
+Request URL | http://&lt;dcp domain&gt;/{scheme identifier}::{id} | |
 HTTP Method | SSL/TLS | Authentication Mechanism |
 DELETE | Yes | Client Certificate |
 
@@ -296,7 +297,7 @@ Colons in the URL need to be encoded as per (Berners-Lee, Fielding, & Masinter, 
 | | |
 | --| ---|
 scheme identifier | urn:oasis:tc:ebcore:partyid-type:catalog-identifier:scheme-in-catalog |
-id |<identifier>  E.g.  <ABN Number> |
+id |&lt;identifier&gt;  E.g.  &lt;ABN Number&gt; |
 
 Example URL 
 
@@ -353,7 +354,7 @@ If the resource does not exist, a resource is created for the provided location.
 
 | | | |
 | --| ---| ---|
-Request URL | http://<dcp domain>/{scheme identifier}::{id}/services/{document identifier type}::{root namespace}::{document element local name}[##{Subtype identifier}] | |
+Request URL | http://&lt;dcp domain>/{scheme identifier}::{id}/services/{document identifier type}::{root namespace}::{document element local name}[##{Subtype identifier}] | |
 HTTP Method | SSL/TLS | Authentication Mechanism |
 PUT | Yes | Client Certificate |
 
@@ -419,7 +420,7 @@ This method can only be called once. Subsequent calls will result in a 404 Not F
 
 | | | |
 | --| --| ---|
-Request URL | http://<dcp domain>/{scheme identifier}::{id}/services/{document identifier type}::{root namespace}::{document element local name}[##{Subtype identifier}] |
+Request URL | http://&lt;dcp domain>/{scheme identifier}::{id}/services/{document identifier type}::{root namespace}::{document element local name}[##{Subtype identifier}] |
 HTTP Method | SSL/TLS | Authentication Mechanism |
 DELETE | Yes | Client Certificate |
 
