@@ -105,7 +105,7 @@ This API does not have side effects and will return a Signed Service Metadata el
 
 | | | |
 | --| ----| ----|
-Request URL | http:// &lt;dcp domain>/{scheme identifier}::{id}/services/{document identifier type}::{root namespace}::{document element local name}[##{Subtype identifier}] | |
+Request URL | http://&lt;dcp domain>/{scheme identifier}::{id}/services/{document identifier type}::{root namespace}::{document element local name}[##{Subtype identifier}] | |
 HTTP Method | SSL/TLS |Authentication Mechanism | 
 GET | No | N/A |
 
@@ -201,7 +201,7 @@ If the resource does not exist, a resource is created for the provided location.
 
 | | | |
 | ---| ----| ---|
-Request URL | http://<dcp domain>/{scheme identifier}::{id} | |
+Request URL | http://&lt;dcp domain&gt;/{scheme identifier}::{id} | |
 HTTP Method | SSL/TLS | Authentication Mechanism |
 PUT | Yes | Client Certificate |
 
@@ -214,7 +214,7 @@ Colons in the URL need to be encoded as per (Berners-Lee, Fielding, & Masinter, 
 | | |
 | ---| ---|
 scheme identifier | urn:oasis:tc:ebcore:partyid-type:catalog-identifier:scheme-in-catalog |
-id | <identifier>  E.g. <ABN Number> |
+id | &lt;identifier&gt;  E.g. &lt;ABN Number> |
 
 Example URL
 
