@@ -1,7 +1,9 @@
 # 9 Services Provided by the Capability Publisher 
 
 A Digital Capability Publisher exposes two types of interfaces: 
+ 
  1. A discovery interface. This interface is a publicly available API to retrieve information stored in the Digital Capability Publisher. It gives access to a receiver’s capability information. 
+ 
  2. A management interface. This interface limits access to authorized clients and allows changes to information stored in the Digital Capability Publisher. 
 
 A Digital Capability Publisher Provider may also decide to implement a graphical user interface to interact with business capability data. This type of interface is not defined in this implementation guide. 
