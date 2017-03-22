@@ -74,6 +74,7 @@ This use case is optional as it would only be useful if there were more than one
 
  6. End flow. 
 
+
 ## BUC036 Business On-boarding
 
 ### Purpose
@@ -163,7 +164,7 @@ There are a number of scenarios covered by this use case:
 
 ### Alternate Flows
 
-**1. New Participant; Business is signing up to Digital Capability Publisher service only (participant may have an Access Point of its own or is signing a separate agreement with a different Access Point Service Provider).**
+ **1. New Participant; Business is signing up to Digital Capability Publisher service only (participant may have an Access Point of its own or is signing a separate agreement with a different Access Point Service Provider).**
 
      a. At step 6, the New Service Provider determines the Business is entering into an agreement with a different Access Point service provider or is using its own Access Point;
   
@@ -173,7 +174,7 @@ There are a number of scenarios covered by this use case:
      
      d. Resume at step 9. 
 
-**2. Existing Participant; Business has an existing Digital Capability Publisher service and is changing only this service to the New Service Provider.**
+ **2. Existing Participant; Business has an existing Digital Capability Publisher service and is changing only this service to the New Service Provider.**
 
 At step 6, the New Service Provider discovers the business has an existing Digital Capability Publisher service that needs to be changed to the New Service Provider’s Digital Capability Publisher service.
 
@@ -187,7 +188,7 @@ At step 6, the New Service Provider discovers the business has an existing Digit
      
      e. Resume at step 9. 
 
-**3. Exisiting Participant; the business is moving both services to the New Service Provider.**
+ **3. Exisiting Participant; the business is moving both services to the New Service Provider.**
 
 At step 6, the New Service Provider discovers the business has an existing Digital Capability Publisher service that needs to be changed to the New Service Provider’s Digital Capability Publisher service.
 
