@@ -12,17 +12,16 @@ The intended audiences are:
 
 Audience Reading Guide | Section | BUSINESS ANALYSTS| APPLICATION DEVELOPERS
 ---|---|---|---
-Overview | 2 | | 
-Conformance | 3 | | 
-Distribution Pacakage | 4 | | 
-Terms and Definitions (Normative) | 5 | | 
-Use Cases | 6 | | 
-Service Metadata Publishing (SMP) Version 1.0 Profile (Normative) | 7 | | 
-Identifiers | 8 | | 
-Services provided by the Capability Publisher | 9 | | 
-Appendix A: Use Cases |  | | 
+Overview | 2 | ![orange_Logo](/images/orange.PNG) | ![orange_Logo](/images/orange.PNG)
+Conformance | 3 |![yellow_Logo](/images/yellow.PNG) |  ![orange_Logo](/images/orange.PNG)
+Distribution Pacakage | 4 | ![orange_Logo](/images/orange.PNG)|  ![orange_Logo](/images/orange.PNG)
+Terms and Definitions (Normative) | 5 |![orange_Logo](/images/orange.PNG) |  ![orange_Logo](/images/orange.PNG)
+Use Cases | 6 | ![orange_Logo](/images/orange.PNG) |  ![orange_Logo](/images/orange.PNG)
+Service Metadata Publishing (SMP) Version 1.0 Profile (Normative) | 7 | ![yellow_Logo](/images/yellow.PNG) | ![orange_Logo](/images/orange.PNG) 
+Identifiers | 8 |![yellow_Logo](/images/yellow.PNG)  | ![orange_Logo](/images/orange.PNG)
+Services provided by the Capability Publisher | 9 | ![yellow_Logo](/images/yellow.PNG) |  ![orange_Logo](/images/orange.PNG)
+Appendix A: Use Cases | | ![orange_Logo](/images/orange.PNG) | ![yellow_Logo](/images/yellow.PNG) 
  	 
-Primary Audience | img 
+Primary Audience | ![orange_Logo](/images/orange.PNG)
 ---|---
-**Secondary Audience** | img
-
+**Secondary Audience** | ![yellow_Logo](/images/yellow.PNG)    
