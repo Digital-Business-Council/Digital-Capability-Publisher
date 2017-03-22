@@ -161,9 +161,9 @@ There are a number of scenarios covered by this use case:
  
  11. End flow. 
 
-## Alternate Flows
+### Alternate Flows
 
- **1. New Participant; Business is signing up to Digital Capability Publisher service only (participant may have an Access Point of its own or is signing a separate agreement with a different Access Point Service Provider).**
+**1. New Participant; Business is signing up to Digital Capability Publisher service only (participant may have an Access Point of its own or is signing a separate agreement with a different Access Point Service Provider).**
 
      a. At step 6, the New Service Provider determines the Business is entering into an agreement with a different Access Point service provider or is using its own Access Point;
   
@@ -203,7 +203,7 @@ At step 6, the New Service Provider discovers the business has an existing Digit
 
 ### Exception flows
 
- **1. New Participant; Business is signing up to Access Point service with the New Service Provider, it will use another Service Provider for Digital Capability Publisher services.**
+**1. New Participant; Business is signing up to Access Point service with the New Service Provider, it will use another Service Provider for Digital Capability Publisher services.**
 
 At step 6, the New Service Provider determines the business will use a different service provider for a Digital Capability Publisher service.
 
@@ -219,7 +219,7 @@ At step 6, the New Service Provider determines the business will use a different
   
      f. End flow. 
   
-  **2. Exisiting Participant: THe Business is changing only to a new Access Point Service Provider for a particular document type and process.**
+**2. Exisiting Participant: THe Business is changing only to a new Access Point Service Provider for a particular document type and process.**
   
 At step 9, the service provider discovers the participant has an existing Access Point provider and will be providing this service for the business instead, however the business is retaining its current Digital Capability Publisher Service provider.
 
