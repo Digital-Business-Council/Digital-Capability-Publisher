@@ -416,7 +416,16 @@ Date | Mandatory | String | The date and time that the message was originated. |
 #### 9.2.5.1 Purpose of the API
 
 Delete a Service Metadata entry for a participant in the Digital Capability Publisher. This method will delete the Service Metadata and all related processes and endpoint entries for the document and participant. 
+
 #### 9.2.5.3 Resource Location 
+
+| | | |
+| ---| ---| ---|
+Request URL | http://<dcp domain>/{scheme identifier}::{id}/services/{document identifier type}::{root namespace}::{document element local name}[##{Subtype identifier}] | |
+HTTP Method | SSL/TLS | Authentication Mechanism |
+DELETE | Yes | Client Certificate |
+
+
 
 #### 9.2.5.2 Behaviour of API
 
