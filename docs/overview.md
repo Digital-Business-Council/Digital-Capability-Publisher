@@ -11,4 +11,5 @@ The Digital Capability Publisher operates in a four-corner model (see Figure2: F
 ![Fourcorner-model.Logo](/images/Fourcorner-model.png)
 
 The OASIS SMP standard (OASIS, 2014) omits the services required to create, update and delete entries in the Digital Capability Publisher. Implementers are expected to provide an interface to perform these maintenance activities. A web based user interface is one way of providing this interface. 
+
 This document does not go into detail on the user interface as the person interacting with this interface will be able to adapt to different implementations. This document does describe a HTTP API interface, popularly known as a RESTful interface (described in section 0). External parties can use this interface to programmatically maintain business capability information. 
