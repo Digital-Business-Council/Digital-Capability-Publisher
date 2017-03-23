@@ -1,6 +1,6 @@
 # The Digital Capability Publisher Implementation Guide
 
-## 1. Audience
+## 1 Audience
 The intended audiences are:
 
 |![BusinessAnalyst-Logo](/images/Businessanalyst.png)| ![ApplicationDeveloper-Logo](/images/Applicationdeveloper.png )|
