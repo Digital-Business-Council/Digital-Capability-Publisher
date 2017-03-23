@@ -4,5 +4,7 @@ The Digital Capability Publisher Implementation Guide and associated artefacts a
 
 This directory contains the following sub-directories:
  
-  - testsets – containing example XML fragment instances (used in this document);
+ 
+ - testsets – containing example XML fragment instances (used in this document);
+  
   - val – test assertions and outcomes for validation testing. 
